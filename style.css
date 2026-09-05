@@ -310,12 +310,15 @@ body.light-theme .title {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 14px 16px;
-  min-width: 190px;
+  min-width: 195px;
   cursor: pointer;
   transition: all var(--transition-smooth);
   position: relative;
   overflow: hidden;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .preset-card:hover {
@@ -329,6 +332,35 @@ body.light-theme .title {
   border-color: var(--gold-primary);
   background: linear-gradient(145deg, rgba(212, 175, 55, 0.15), var(--bg-input));
   box-shadow: 0 0 16px rgba(212, 175, 55, 0.3);
+}
+
+/* Preset Image Box */
+.preset-img-box {
+  width: 100%;
+  height: 96px;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.light-theme .preset-img-box {
+  background: #FFFFFF;
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+.preset-img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.preset-card:hover .preset-img-box img {
+  transform: scale(1.08);
 }
 
 .preset-brand {
@@ -1436,6 +1468,36 @@ body.light-theme .log-stats-grid {
 .log-row-card:hover {
   border-color: rgba(255, 255, 255, 0.25);
   background: var(--bg-input-hover);
+}
+
+.log-ring-info-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.log-thumb-box {
+  width: 52px;
+  height: 52px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+body.light-theme .log-thumb-box {
+  background: #FFFFFF;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.log-thumb-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .log-ring-info {

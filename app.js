@@ -14,7 +14,10 @@ let PRESETS = [
     jpPrice: 193600,
     krPrice: 2050000,
     guestCardAllowed: false,
-    tag: '게스트카드 5% 불가'
+    tag: '게스트카드 5% 불가',
+    imageUrl: 'https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwc27b40c7/images/large/5c4da398fe195e5fa36ea2b5d4ce0071.png',
+    krUrl: 'https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/love/love-%EB%A7%81-%EC%8A%A4%EB%AA%B0%28small%29-%EB%AA%A8%EB%8D%B8-CRB4085000.html',
+    jpUrl: 'https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/love/love-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%B9%E3%83%A2%E3%83%BC%E3%83%AB%E3%83%A2%E3%83%87%E3%83%AB-CRB4085000.html'
   },
   {
     id: 'cartier-love-cl',
@@ -24,7 +27,10 @@ let PRESETS = [
     jpPrice: 284900,
     krPrice: 2980000,
     guestCardAllowed: false,
-    tag: '게스트카드 5% 불가'
+    tag: '게스트카드 5% 불가',
+    imageUrl: 'https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw47516a74/images/large/509efad81d12569981abebf66c433720.png',
+    krUrl: 'https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/love/love-%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8B%9D-%EB%AA%A8%EB%8D%B8--CRB4084600.html',
+    jpUrl: 'https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/love/love-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%87%E3%83%AB-CRB4084600.html'
   },
   {
     id: 'cartier-trinity-cl',
@@ -34,7 +40,10 @@ let PRESETS = [
     jpPrice: 249700,
     krPrice: 2620000,
     guestCardAllowed: false,
-    tag: '게스트카드 5% 불가'
+    tag: '게스트카드 5% 불가',
+    imageUrl: 'https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwae3ae765/images/large/bdddbc7c263e54ea9f1f71501fb9eede.png',
+    krUrl: 'https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0-%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8B%9D-%EB%AA%A8%EB%8D%B8-CRB4234200.html',
+    jpUrl: 'https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/%E3%83%88%E3%83%AA%E3%83%8B%E3%83%86%E3%82%A3/%E3%83%88%E3%83%AA%E3%83%8B%E3%83%86%E3%82%A3-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%87%E3%83%AB-CRB4234200.html'
   },
   {
     id: 'tiffany-t-true',
@@ -44,7 +53,10 @@ let PRESETS = [
     jpPrice: 214500,
     krPrice: 2270000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능'
+    tag: '지점별 5% 가능',
+    imageUrl: 'https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-ttrue-narrow-ring-63064947_989758_ED_M.jpg',
+    krUrl: 'https://www.tiffany.kr/jewelry/rings/',
+    jpUrl: 'https://www.tiffany.co.jp/jewelry/rings/'
   },
   {
     id: 'tiffany-band-ring',
@@ -54,7 +66,10 @@ let PRESETS = [
     jpPrice: 269500,
     krPrice: 2850000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능'
+    tag: '지점별 5% 가능',
+    imageUrl: 'https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-classic-wedding-band-ring-63064947_989758_ED_M.jpg',
+    krUrl: 'https://www.tiffany.kr/engagement/womens-wedding-bands/',
+    jpUrl: 'https://www.tiffany.co.jp/engagement/womens-wedding-bands/'
   },
   {
     id: 'chanel-coco-sm',
@@ -64,7 +79,10 @@ let PRESETS = [
     jpPrice: 245300,
     krPrice: 2590000,
     guestCardAllowed: false,
-    tag: '게스트카드 5% 불가'
+    tag: '게스트카드 5% 불가',
+    imageUrl: 'https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-beige-gold-packshot-portee-1-j11785-73266669.jpg',
+    krUrl: 'https://www.chanel.com/kr/fine-jewellery/coco-crush/',
+    jpUrl: 'https://www.chanel.com/jp/fine-jewellery/coco-crush/'
   },
   {
     id: 'chanel-coco-md',
@@ -74,7 +92,10 @@ let PRESETS = [
     jpPrice: 424600,
     krPrice: 4480000,
     guestCardAllowed: false,
-    tag: '게스트카드 5% 불가'
+    tag: '게스트카드 5% 불가',
+    imageUrl: 'https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-gold-18k-beige-gold-packshot-portee-1-j10817-73266669.jpg',
+    krUrl: 'https://www.chanel.com/kr/fine-jewellery/coco-crush/',
+    jpUrl: 'https://www.chanel.com/jp/fine-jewellery/coco-crush/'
   },
   {
     id: 'bvlgari-bzero1',
@@ -84,7 +105,10 @@ let PRESETS = [
     jpPrice: 267300,
     krPrice: 2810000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능'
+    tag: '지점별 5% 가능',
+    imageUrl: 'https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1319269.png',
+    krUrl: 'https://www.bulgari.com/ko-kr/bridal/wedding-bands',
+    jpUrl: 'https://www.bulgari.com/ja-jp/bridal/wedding-bands'
   },
   {
     id: 'bvlgari-serpenti',
@@ -94,17 +118,23 @@ let PRESETS = [
     jpPrice: 302500,
     krPrice: 3190000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능'
+    tag: '지점별 5% 가능',
+    imageUrl: 'https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1337147.png',
+    krUrl: 'https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti',
+    jpUrl: 'https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti'
   },
   {
     id: 'graff-laurence',
     brand: 'Graff',
     brandKr: '그라프',
-    name: '로렌스 그라프 시그니처',
+    name: '로렌스 그라프 시그니처 링',
     jpPrice: 345000,
     krPrice: 3650000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능'
+    tag: '지점별 5% 가능',
+    imageUrl: 'https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg',
+    krUrl: 'https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/',
+    jpUrl: 'https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/'
   },
   {
     id: 'graff-spiral',
@@ -114,27 +144,36 @@ let PRESETS = [
     jpPrice: 315000,
     krPrice: 3300000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능'
+    tag: '지점별 5% 가능',
+    imageUrl: 'https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg',
+    krUrl: 'https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/',
+    jpUrl: 'https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/'
   },
   {
     id: 'boucheron-quatre',
     brand: 'Boucheron',
     brandKr: '부쉐론',
-    name: '콰트로 클래식 스몰',
+    name: '콰트로 클래식 스몰 링',
     jpPrice: 627000,
     krPrice: 6650000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능'
+    tag: '지점별 5% 가능',
+    imageUrl: 'https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/r/jrg00200_1.png',
+    krUrl: 'https://www.boucheron.com/ko-kr/bridal/wedding-bands',
+    jpUrl: 'https://www.boucheron.com/ja-jp/bridal/wedding-bands'
   },
   {
     id: 'boucheron-facette',
     brand: 'Boucheron',
     brandKr: '부쉐론',
-    name: '파셋 웨딩 밴드',
+    name: '파셋 웨딩 밴드 (플래티넘)',
     jpPrice: 279400,
     krPrice: 2940000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능'
+    tag: '지점별 5% 가능',
+    imageUrl: 'https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00014_1.png',
+    krUrl: 'https://www.boucheron.com/ko-kr/bridal/wedding-bands',
+    jpUrl: 'https://www.boucheron.com/ja-jp/bridal/wedding-bands'
   },
   {
     id: 'chaumet-bee',
@@ -144,7 +183,10 @@ let PRESETS = [
     jpPrice: 163900,
     krPrice: 1740000,
     guestCardAllowed: true,
-    tag: '백화점 5% 가능'
+    tag: '백화점 5% 가능',
+    imageUrl: 'https://www.chaumet.com/media/catalog/product/0/8/083434_1.png',
+    krUrl: 'https://www.chaumet.com/kr/bridal/wedding-bands',
+    jpUrl: 'https://www.chaumet.com/jp/bridal/wedding-bands'
   },
   {
     id: 'chaumet-liens',
@@ -154,7 +196,10 @@ let PRESETS = [
     jpPrice: 272800,
     krPrice: 2880000,
     guestCardAllowed: true,
-    tag: '백화점 5% 가능'
+    tag: '백화점 5% 가능',
+    imageUrl: 'https://www.chaumet.com/media/catalog/product/0/8/082218_1.png',
+    krUrl: 'https://www.chaumet.com/kr/bridal/wedding-bands',
+    jpUrl: 'https://www.chaumet.com/jp/bridal/wedding-bands'
   }
 ];
 
@@ -360,11 +405,17 @@ function renderCrawlLogModal(logData, filterQuery = '') {
 
     const krStatusClass = item.krCode === 200 ? 'ok' : 'notice';
     const jpStatusClass = item.jpCode === 200 ? 'ok' : 'notice';
+    const thumbHtml = item.imageUrl
+      ? `<div class="log-thumb-box"><img src="${item.imageUrl}" alt="${item.name}" class="log-thumb-img" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.style.display='none'" /></div>`
+      : '';
 
     card.innerHTML = `
-      <div class="log-ring-info">
-        <span class="log-brand-tag">${item.brand} (${item.brandKr || item.brand})</span>
-        <span class="log-ring-title">${item.name}</span>
+      <div class="log-ring-info-wrap">
+        ${thumbHtml}
+        <div class="log-ring-info">
+          <span class="log-brand-tag">${item.brand} (${item.brandKr || item.brand})</span>
+          <span class="log-ring-title">${item.name}</span>
+        </div>
       </div>
 
       <div class="log-store-box">
@@ -440,8 +491,12 @@ function renderPresets() {
     card.dataset.id = item.id;
     
     const tagClass = item.guestCardAllowed ? 'guest-ok' : 'no-guest';
+    const imgHtml = item.imageUrl
+      ? `<div class="preset-img-box"><img src="${item.imageUrl}" alt="${item.name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.style.display='none'" /></div>`
+      : '';
     
     card.innerHTML = `
+      ${imgHtml}
       <div class="preset-brand">${item.brand}</div>
       <div class="preset-name">${item.name}</div>
       <div class="preset-prices">

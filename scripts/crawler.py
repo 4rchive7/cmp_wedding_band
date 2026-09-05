@@ -97,6 +97,20 @@ def extract_price_from_html(html: str, currency_code: str) -> int | None:
     return None
 
 
+def extract_image_from_html(html: str) -> str | None:
+    """Extract product image URL from OpenGraph or Twitter meta tags."""
+    if not html:
+        return None
+    match = re.search(
+        r'<meta\s+(?:property|name)=["\'](?:og:image|twitter:image)["\']\s+content=["\']([^"\']+)["\']',
+        html,
+        re.IGNORECASE,
+    )
+    if match and match.group(1).startswith("http"):
+        return match.group(1)
+    return None
+
+
 def update_prices():
     """Main crawler pipeline with JSON log generation."""
     if not os.path.exists(RINGS_PATH):
@@ -132,6 +146,9 @@ def update_prices():
         if kr_url:
             html_kr, kr_code, kr_msg = fetch_html_with_status(kr_url)
             new_kr = extract_price_from_html(html_kr, "KRW")
+            img_kr = extract_image_from_html(html_kr)
+            if img_kr and not ring.get("imageUrl"):
+                ring["imageUrl"] = img_kr
             if new_kr and new_kr != ring.get("krPrice"):
                 print(f"  [KRW Updated] {ring.get('krPrice')} -> {new_kr}", flush=True)
                 ring["krPrice"] = new_kr
@@ -146,6 +163,9 @@ def update_prices():
         if jp_url:
             html_jp, jp_code, jp_msg = fetch_html_with_status(jp_url)
             new_jp = extract_price_from_html(html_jp, "JPY")
+            img_jp = extract_image_from_html(html_jp)
+            if img_jp and not ring.get("imageUrl"):
+                ring["imageUrl"] = img_jp
             if new_jp and new_jp != ring.get("jpPrice"):
                 print(f"  [JPY Updated] {ring.get('jpPrice')} -> {new_jp}", flush=True)
                 ring["jpPrice"] = new_jp
@@ -166,6 +186,7 @@ def update_prices():
             "jpStatus": jp_status_desc,
             "krCode": kr_code,
             "jpCode": jp_code,
+            "imageUrl": ring.get("imageUrl"),
             "krUrl": kr_url,
             "jpUrl": jp_url,
         })

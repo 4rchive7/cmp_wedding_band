@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-05 23:08:26 KST",
+  "timestamp": "2026-09-05 23:37:21 KST",
   "date": "2026-09-05",
   "status": "COMPLETED",
   "totalRings": 15,
@@ -17,6 +17,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwc27b40c7/images/large/5c4da398fe195e5fa36ea2b5d4ce0071.png",
       "krUrl": "https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/love/love-%EB%A7%81-%EC%8A%A4%EB%AA%B0%28small%29-%EB%AA%A8%EB%8D%B8-CRB4085000.html",
       "jpUrl": "https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/love/love-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%B9%E3%83%A2%E3%83%BC%E3%83%AB%E3%83%A2%E3%83%87%E3%83%AB-CRB4085000.html"
     },
@@ -31,6 +32,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw47516a74/images/large/509efad81d12569981abebf66c433720.png",
       "krUrl": "https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/love/love-%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8B%9D-%EB%AA%A8%EB%8D%B8--CRB4084600.html",
       "jpUrl": "https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/love/love-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%87%E3%83%AB-CRB4084600.html"
     },
@@ -45,6 +47,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwae3ae765/images/large/bdddbc7c263e54ea9f1f71501fb9eede.png",
       "krUrl": "https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0-%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8B%9D-%EB%AA%A8%EB%8D%B8-CRB4234200.html",
       "jpUrl": "https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/%E3%83%88%E3%83%AA%E3%83%8B%E3%83%86%E3%82%A3/%E3%83%88%E3%83%AA%E3%83%8B%E3%83%86%E3%82%A3-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%87%E3%83%AB-CRB4234200.html"
     },
@@ -59,6 +62,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-ttrue-narrow-ring-63064947_989758_ED_M.jpg",
       "krUrl": "https://www.tiffany.kr/jewelry/rings/",
       "jpUrl": "https://www.tiffany.co.jp/jewelry/rings/"
     },
@@ -73,6 +77,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-classic-wedding-band-ring-63064947_989758_ED_M.jpg",
       "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/",
       "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/"
     },
@@ -87,6 +92,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-beige-gold-packshot-portee-1-j11785-73266669.jpg",
       "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/",
       "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/"
     },
@@ -101,6 +107,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-gold-18k-beige-gold-packshot-portee-1-j10817-73266669.jpg",
       "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/",
       "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/"
     },
@@ -115,6 +122,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1319269.png",
       "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
       "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands"
     },
@@ -129,6 +137,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1337147.png",
       "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti",
       "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti"
     },
@@ -140,9 +149,10 @@
       "krPrice": 3650000,
       "jpPrice": 345000,
       "krStatus": "HTTP 302 (정가 유지)",
-      "jpStatus": "Connection error: _ssl.c:989: The handshake operation timed out (정가 유지)",
+      "jpStatus": "HTTP 302 (정가 유지)",
       "krCode": 302,
-      "jpCode": 0,
+      "jpCode": 302,
+      "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg",
       "krUrl": "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/",
       "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/"
     },
@@ -157,6 +167,7 @@
       "jpStatus": "HTTP 302 (정가 유지)",
       "krCode": 302,
       "jpCode": 302,
+      "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg",
       "krUrl": "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/",
       "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/"
     },
@@ -171,6 +182,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/r/jrg00200_1.png",
       "krUrl": "https://www.boucheron.com/ko-kr/bridal/wedding-bands",
       "jpUrl": "https://www.boucheron.com/ja-jp/bridal/wedding-bands"
     },
@@ -185,6 +197,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00014_1.png",
       "krUrl": "https://www.boucheron.com/ko-kr/bridal/wedding-bands",
       "jpUrl": "https://www.boucheron.com/ja-jp/bridal/wedding-bands"
     },
@@ -199,6 +212,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/083434_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands",
       "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands"
     },
@@ -213,6 +227,7 @@
       "jpStatus": "HTTP 403 (정가 유지)",
       "krCode": 403,
       "jpCode": 403,
+      "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082218_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands",
       "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands"
     }
