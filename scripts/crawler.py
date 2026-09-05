@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
 """
-Wedding Band Price Crawler
-Fetches latest official retail prices for Japan and Korea luxury wedding bands.
+Wedding Band Price Crawler with Detailed Logging
+Fetches latest official retail prices for Japan and Korea luxury wedding bands
+and outputs structured crawl logs for the frontend UI.
 """
 
 import json
 import os
 import re
 import sys
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from urllib.request import Request, urlopen
 from urllib.error import URLError, HTTPError
 
@@ -18,7 +19,9 @@ if sys.stdout.encoding != "utf-8":
     except Exception:
         pass
 
-DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "rings.json")
+DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
+RINGS_PATH = os.path.join(DATA_DIR, "rings.json")
+LOG_PATH = os.path.join(DATA_DIR, "crawl_log.json")
 
 HEADERS = {
     "User-Agent": (
@@ -31,20 +34,28 @@ HEADERS = {
 }
 
 
-def fetch_html(url: str, timeout: int = 4) -> str:
-    """Safely fetch HTML with timeout and error handling."""
+def get_kst_now():
+    """Get current time in KST (UTC+9)."""
+    kst = timezone(timedelta(hours=9))
+    return datetime.now(kst)
+
+
+def fetch_html_with_status(url: str, timeout: int = 4) -> tuple[str, int, str]:
+    """Safely fetch HTML, returning (html_content, status_code, message)."""
     if not url:
-        return ""
+        return "", 0, "No URL provided"
     try:
         req = Request(url, headers=HEADERS)
         with urlopen(req, timeout=timeout) as response:
-            return response.read().decode("utf-8", errors="ignore")
+            code = response.getcode() or 200
+            content = response.read().decode("utf-8", errors="ignore")
+            return content, code, "OK"
     except HTTPError as e:
-        print(f"    -> [Notice] {e.code} status (Kept verified price)", flush=True)
-        return ""
+        return "", e.code, f"HTTP {e.code}"
+    except URLError as e:
+        return "", 0, f"Connection error: {e.reason}"
     except Exception as e:
-        print(f"    -> [Notice] Skipped: {e}", flush=True)
-        return ""
+        return "", 0, f"Error: {str(e)[:40]}"
 
 
 def extract_price_from_html(html: str, currency_code: str) -> int | None:
@@ -87,55 +98,100 @@ def extract_price_from_html(html: str, currency_code: str) -> int | None:
 
 
 def update_prices():
-    """Main crawler pipeline."""
-    if not os.path.exists(DATA_PATH):
-        print(f"Data file not found at {DATA_PATH}", flush=True)
+    """Main crawler pipeline with JSON log generation."""
+    if not os.path.exists(RINGS_PATH):
+        print(f"Data file not found at {RINGS_PATH}", flush=True)
         sys.exit(1)
 
-    with open(DATA_PATH, "r", encoding="utf-8") as f:
+    with open(RINGS_PATH, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    today_str = datetime.now().strftime("%Y-%m-%d")
-    print(f"=== Starting Wedding Band Price Crawler [{today_str}] ===", flush=True)
+    now_kst = get_kst_now()
+    timestamp_str = now_kst.strftime("%Y-%m-%d %H:%M:%S KST")
+    today_str = now_kst.strftime("%Y-%m-%d")
+
+    print(f"=== Starting Wedding Band Price Crawler [{timestamp_str}] ===", flush=True)
 
     updated_count = 0
     rings = data.get("rings", [])
     total_rings = len(rings)
+    log_items = []
 
     for idx, ring in enumerate(rings, start=1):
         brand = ring.get("brand")
         name = ring.get("name")
-        print(f"[{idx}/{total_rings}] Checking {brand} - {name}...", flush=True)
+        print(f"\n[{idx}/{total_rings}] Checking {brand} - {name}...", flush=True)
 
+        kr_status_desc = "Verified"
+        jp_status_desc = "Verified"
+        kr_code = 200
+        jp_code = 200
+
+        # 1. Korea Price Check
         kr_url = ring.get("krUrl")
         if kr_url:
-            html_kr = fetch_html(kr_url)
+            html_kr, kr_code, kr_msg = fetch_html_with_status(kr_url)
             new_kr = extract_price_from_html(html_kr, "KRW")
             if new_kr and new_kr != ring.get("krPrice"):
                 print(f"  [KRW Updated] {ring.get('krPrice')} -> {new_kr}", flush=True)
                 ring["krPrice"] = new_kr
+                kr_status_desc = "Updated"
                 updated_count += 1
             else:
-                print(f"  [KRW Verified] ₩{ring.get('krPrice'):,}", flush=True)
+                kr_status_desc = f"{kr_msg} (정가 유지)" if kr_code != 200 else "정상 확인"
+                print(f"  [KRW Status: {kr_code}] ₩{ring.get('krPrice'):,}", flush=True)
 
+        # 2. Japan Price Check
         jp_url = ring.get("jpUrl")
         if jp_url:
-            html_jp = fetch_html(jp_url)
+            html_jp, jp_code, jp_msg = fetch_html_with_status(jp_url)
             new_jp = extract_price_from_html(html_jp, "JPY")
             if new_jp and new_jp != ring.get("jpPrice"):
                 print(f"  [JPY Updated] {ring.get('jpPrice')} -> {new_jp}", flush=True)
                 ring["jpPrice"] = new_jp
+                jp_status_desc = "Updated"
                 updated_count += 1
             else:
-                print(f"  [JPY Verified] ¥{ring.get('jpPrice'):,}", flush=True)
+                jp_status_desc = f"{jp_msg} (정가 유지)" if jp_code != 200 else "정상 확인"
+                print(f"  [JPY Status: {jp_code}] ¥{ring.get('jpPrice'):,}", flush=True)
+
+        log_items.append({
+            "id": ring.get("id"),
+            "brand": brand,
+            "brandKr": ring.get("brandKr", brand),
+            "name": name,
+            "krPrice": ring.get("krPrice"),
+            "jpPrice": ring.get("jpPrice"),
+            "krStatus": kr_status_desc,
+            "jpStatus": jp_status_desc,
+            "krCode": kr_code,
+            "jpCode": jp_code,
+            "krUrl": kr_url,
+            "jpUrl": jp_url,
+        })
 
     data["lastUpdated"] = today_str
 
-    with open(DATA_PATH, "w", encoding="utf-8") as f:
+    # Save rings.json
+    with open(RINGS_PATH, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
+    # Save crawl_log.json
+    crawl_log = {
+        "timestamp": timestamp_str,
+        "date": today_str,
+        "status": "COMPLETED",
+        "totalRings": total_rings,
+        "updatedCount": updated_count,
+        "verifiedCount": total_rings - updated_count,
+        "logs": log_items
+    }
+
+    with open(LOG_PATH, "w", encoding="utf-8") as f:
+        json.dump(crawl_log, f, ensure_ascii=False, indent=2)
+
     print(f"\n[Done] Crawling finished. Updates applied: {updated_count}", flush=True)
-    print(f"[Done] Database updated at data/rings.json (lastUpdated: {today_str})", flush=True)
+    print(f"[Done] Log saved to {LOG_PATH}", flush=True)
 
 
 if __name__ == "__main__":

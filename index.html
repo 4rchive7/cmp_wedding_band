@@ -33,6 +33,10 @@
             <span class="mode-icon">👥</span> 2인 커플 (웨딩페어)
           </button>
         </div>
+        <button type="button" class="crawl-log-btn" id="openCrawlLogBtn" title="공식몰 크롤링 검증 로그">
+          <span class="log-pulse"></span>
+          <span>크롤링 로그</span>
+        </button>
         <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="테마 변경">
           <span class="theme-icon">🌙</span>
         </button>
@@ -424,6 +428,53 @@
         <span>관세청 여행자 휴대품 통관 기준 ($800 면세 / 자진신고 30% 감면) 적용</span>
       </div>
     </footer>
+  </div>
+
+  <!-- Crawl Log Modal -->
+  <div class="modal-overlay" id="crawlLogModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-tag">CRAWLER STATUS LOG</span>
+          <h3 class="modal-title">📡 공식몰 크롤링 & 데이터 검증 로그</h3>
+          <p class="modal-subtitle" id="logTimestamp">마지막 자동 검증: 2026-09-05 22:52:51 KST</p>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeCrawlLogBtn" aria-label="닫기">✕</button>
+      </div>
+
+      <!-- Summary Stats Cards -->
+      <div class="log-stats-grid">
+        <div class="log-stat-card">
+          <span class="stat-label">모니터링 대상</span>
+          <span class="stat-val" id="logTotalCount">15개 모델</span>
+        </div>
+        <div class="log-stat-card">
+          <span class="stat-label">크롤러 상태</span>
+          <span class="stat-val success" id="logStatusBadge">🟢 정상 완료</span>
+        </div>
+        <div class="log-stat-card">
+          <span class="stat-label">최근 변동</span>
+          <span class="stat-val" id="logUpdatedCount">0건 (정가 유지)</span>
+        </div>
+        <div class="log-stat-card">
+          <span class="stat-label">자동 스케줄</span>
+          <span class="stat-val">매주 월요일 09:00</span>
+        </div>
+      </div>
+
+      <!-- Filter / GitHub Action Link -->
+      <div class="log-filter-bar">
+        <input type="text" id="logSearchInput" class="log-search-input" placeholder="🔍 브랜드 또는 모델명 검색...">
+        <a href="https://github.com/4rchive7/cmp_wedding_band/actions" target="_blank" rel="noopener noreferrer" class="github-action-link">
+          <span>GitHub Actions 실행 로그</span> ↗
+        </a>
+      </div>
+
+      <!-- Log Items Container -->
+      <div class="log-items-container" id="logItemsContainer">
+        <!-- Dynamic JS injected log rows -->
+      </div>
+    </div>
   </div>
 
   <!-- Toast Notification -->
