@@ -3,8 +3,8 @@
  * Japan vs Korea Price Comparison Engine
  */
 
-// --- Preset Database ---
-const PRESETS = [
+// --- Default Fallback Presets ---
+let PRESETS = [
   {
     id: 'cartier-love-sm',
     brand: 'Cartier',
@@ -166,6 +166,26 @@ function parseNumber(str) {
   return parseFloat(str.replace(/[^0-9.-]/g, '')) || 0;
 }
 
+// --- Fetch External Data (rings.json) ---
+async function loadExternalRingsData() {
+  try {
+    const res = await fetch('./data/rings.json');
+    if (!res.ok) throw new Error('Failed to load rings.json');
+    const data = await res.json();
+    if (data && data.rings && Array.isArray(data.rings)) {
+      PRESETS = data.rings;
+      renderPresets();
+      
+      const hint = document.querySelector('.preset-hint');
+      if (hint && data.lastUpdated) {
+        hint.textContent = `* 공식몰 기준 데이터 (최종 검증: ${data.lastUpdated})`;
+      }
+    }
+  } catch (err) {
+    console.log('Using default presets data:', err);
+  }
+}
+
 // --- Live Currency Fetcher ---
 async function fetchLiveExchangeRates() {
   dom.rateTimestamp.textContent = '최신 환율 조회 중...';
@@ -179,7 +199,6 @@ async function fetchLiveExchangeRates() {
       const usdJpy = data.rates.JPY;
       
       if (usdKrw && usdJpy) {
-        // 100 JPY to KRW = (usdKrw / usdJpy) * 100
         const jpy100Krw = (usdKrw / usdJpy) * 100;
         
         state.usdKrwRate = Math.round(usdKrw * 10) / 10;
@@ -282,7 +301,6 @@ function calculatePrices() {
   const jpAfterGuestJPY = baseJp - jpGuestDiscountJPY;
   
   // 2. Tax Free Refund (Based on Pre-tax price)
-  // Japan Consumption tax is 10%. Pre-tax = Price / 1.10
   const jpPreTaxJPY = jpAfterGuestJPY / 1.10;
   let taxRefundRate = 0;
   if (state.taxFreeType === 'dept') {
@@ -303,7 +321,6 @@ function calculatePrices() {
   const jpPaidKRW = Math.round(jpTotalSpentJPY * (jpyKrwRate / 100));
   
   // 5. Korean Customs Duty & VAT Calculation
-  // USD Value of purchase = Store net JPY / USD_JPY rate
   const purchaseUSD = jpStoreNetJPY / usdJpyRate;
   const dutyFreeAllowanceUSD = 800 * multiplier; // $800 per person
   const taxableUSD = Math.max(0, purchaseUSD - dutyFreeAllowanceUSD);
@@ -400,7 +417,6 @@ function calculateAndRender() {
   
   // Update Verdict Banner
   if (data.diffKRW > 0) {
-    // Japan Cheaper
     dom.verdictTrophy.textContent = '🏆';
     dom.verdictWinnerBadge.textContent = '일본 구매 강력 추천!';
     dom.verdictWinnerBadge.style.color = '#34D399';
@@ -408,7 +424,6 @@ function calculateAndRender() {
     dom.verdictDiffAmount.style.color = '#FCD34D';
     dom.verdictDiffPercent.textContent = `(${data.savePercent.toFixed(1)}% 절약)`;
     
-    // Travel Benefit Message
     if (data.diffKRW >= 800000) {
       dom.travelMsg.textContent = `🎉 차액(${formatKRW(data.diffKRW)})으로 2인 일본 왕복 항공권 + 5성급 호텔 숙박비가 나옵니다!`;
     } else if (data.diffKRW >= 350000) {
@@ -417,7 +432,6 @@ function calculateAndRender() {
       dom.travelMsg.textContent = `🍣 차액(${formatKRW(data.diffKRW)})으로 일본 고급 오마카세 2인 식사 비용을 절약합니다!`;
     }
   } else if (data.diffKRW < 0) {
-    // Korea Cheaper
     dom.verdictTrophy.textContent = '🇰🇷';
     dom.verdictWinnerBadge.textContent = '한국 백화점 구매 추천!';
     dom.verdictWinnerBadge.style.color = '#60A5FA';
@@ -552,7 +566,6 @@ function calculateAndRender() {
   dom.krReceiptLines.innerHTML = krLinesHTML;
   dom.krFinalTotal.textContent = formatKRW(data.totalKoreaKRW);
   
-  // Sync URL State
   updateURLQuery();
 }
 
@@ -629,18 +642,15 @@ function showToast(message) {
 
 // --- Event Listeners Setup ---
 function setupEventListeners() {
-  // Mode Buttons
   dom.singleModeBtn.addEventListener('click', () => setMode(1));
   dom.coupleModeBtn.addEventListener('click', () => setMode(2));
   
-  // Theme Toggle
   dom.themeToggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-theme');
     const isLight = document.body.classList.contains('light-theme');
     dom.themeToggleBtn.querySelector('.theme-icon').textContent = isLight ? '☀️' : '🌙';
   });
   
-  // Input formatting & changes
   [dom.jpPrice, dom.krPrice].forEach(input => {
     input.addEventListener('input', (e) => {
       const num = parseNumber(e.target.value);
@@ -653,7 +663,6 @@ function setupEventListeners() {
     });
   });
   
-  // Quick Add Helpers
   document.querySelectorAll('.quick-add').forEach(btn => {
     btn.addEventListener('click', () => {
       const targetId = btn.dataset.target;
@@ -673,7 +682,6 @@ function setupEventListeners() {
     });
   });
   
-  // Japan Controls
   dom.jpGuestCard.addEventListener('change', (e) => {
     state.hasGuestCard = e.target.checked;
     calculateAndRender();
@@ -687,7 +695,6 @@ function setupEventListeners() {
   dom.jpCardFee.addEventListener('change', () => calculateAndRender());
   dom.customsSelfDeclare.addEventListener('change', () => calculateAndRender());
   
-  // Korea Controls
   dom.krGiftDiscount.addEventListener('change', (e) => {
     if (e.target.value === 'custom') {
       dom.krCustomGiftWrap.classList.remove('hidden');
@@ -700,7 +707,6 @@ function setupEventListeners() {
   dom.krCustomGift.addEventListener('input', () => calculateAndRender());
   dom.krMileage.addEventListener('change', () => calculateAndRender());
   
-  // Exchange Rates
   [dom.jpyKrwRate, dom.usdKrwRate, dom.usdJpyRate].forEach(input => {
     input.addEventListener('input', () => calculateAndRender());
   });
@@ -709,7 +715,6 @@ function setupEventListeners() {
     fetchLiveExchangeRates();
   });
   
-  // Copy Result Button
   dom.copyResultBtn.addEventListener('click', () => {
     const data = calculatePrices();
     const modeStr = data.multiplier === 2 ? '2인 커플 (웨딩페어)' : '1인 싱글';
@@ -736,7 +741,6 @@ function setupEventListeners() {
     });
   });
   
-  // Share URL Button
   dom.shareUrlBtn.addEventListener('click', () => {
     updateURLQuery();
     navigator.clipboard.writeText(window.location.href).then(() => {
@@ -748,16 +752,16 @@ function setupEventListeners() {
 }
 
 // --- Initialization ---
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   renderPresets();
   setupEventListeners();
   
   const loadedFromUrl = loadStateFromURL();
   if (!loadedFromUrl) {
-    // Select the first preset as a showcase default
     applyPreset(PRESETS[0]);
   }
   
   calculateAndRender();
   fetchLiveExchangeRates();
+  await loadExternalRingsData();
 });
