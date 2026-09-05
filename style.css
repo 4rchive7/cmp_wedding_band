@@ -255,6 +255,44 @@ body.light-theme .title {
   margin-left: auto;
 }
 
+/* Brand Filter Bar */
+.brand-filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+  scrollbar-width: thin;
+}
+
+.brand-tab {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition-fast);
+}
+
+.brand-tab:hover {
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+  background: var(--bg-input-hover);
+}
+
+.brand-tab.active {
+  background: var(--gold-primary);
+  color: #0F172A;
+  font-weight: 700;
+  border-color: var(--gold-primary);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.35);
+}
+
 .preset-scroll-container {
   overflow-x: auto;
   padding-bottom: 6px;

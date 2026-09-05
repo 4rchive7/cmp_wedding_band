@@ -1,13 +1,14 @@
 /**
  * WEDDING BAND PRICE INDEX - CORE APPLICATION
- * Japan vs Korea Price Comparison Engine
+ * Target 7 Luxury Brands: Cartier, Tiffany & Co., Chanel, Bvlgari, Graff, Boucheron, Chaumet
  */
 
-// --- Default Fallback Presets ---
+// --- Default 7 Luxury Brands Presets ---
 let PRESETS = [
   {
     id: 'cartier-love-sm',
     brand: 'Cartier',
+    brandKr: '까르띠에',
     name: '러브 웨딩 밴드 (SM)',
     jpPrice: 193600,
     krPrice: 2050000,
@@ -17,6 +18,7 @@ let PRESETS = [
   {
     id: 'cartier-love-cl',
     brand: 'Cartier',
+    brandKr: '까르띠에',
     name: '러브 링 (클래식)',
     jpPrice: 284900,
     krPrice: 2980000,
@@ -24,26 +26,19 @@ let PRESETS = [
     tag: '게스트카드 5% 불가'
   },
   {
-    id: 'chanel-coco-sm',
-    brand: 'Chanel',
-    name: '코코 크러쉬 링 (스몰)',
-    jpPrice: 245300,
-    krPrice: 2590000,
+    id: 'cartier-trinity-cl',
+    brand: 'Cartier',
+    brandKr: '까르띠에',
+    name: '트리니티 링 (클래식)',
+    jpPrice: 249700,
+    krPrice: 2620000,
     guestCardAllowed: false,
     tag: '게스트카드 5% 불가'
   },
   {
-    id: 'boucheron-quatre',
-    brand: 'Boucheron',
-    name: '콰트로 클래식 스몰',
-    jpPrice: 627000,
-    krPrice: 6650000,
-    guestCardAllowed: true,
-    tag: '지점별 5% 가능'
-  },
-  {
     id: 'tiffany-t-true',
     brand: 'Tiffany & Co.',
+    brandKr: '티파니',
     name: 'T 트루 내로우 링',
     jpPrice: 214500,
     krPrice: 2270000,
@@ -51,8 +46,99 @@ let PRESETS = [
     tag: '지점별 5% 가능'
   },
   {
+    id: 'tiffany-band-ring',
+    brand: 'Tiffany & Co.',
+    brandKr: '티파니',
+    name: '티파니 밴드 링 (3P 다이아)',
+    jpPrice: 269500,
+    krPrice: 2850000,
+    guestCardAllowed: true,
+    tag: '지점별 5% 가능'
+  },
+  {
+    id: 'chanel-coco-sm',
+    brand: 'Chanel',
+    brandKr: '샤넬',
+    name: '코코 크러쉬 링 (스몰)',
+    jpPrice: 245300,
+    krPrice: 2590000,
+    guestCardAllowed: false,
+    tag: '게스트카드 5% 불가'
+  },
+  {
+    id: 'chanel-coco-md',
+    brand: 'Chanel',
+    brandKr: '샤넬',
+    name: '코코 크러쉬 링 (미디엄)',
+    jpPrice: 424600,
+    krPrice: 4480000,
+    guestCardAllowed: false,
+    tag: '게스트카드 5% 불가'
+  },
+  {
+    id: 'bvlgari-bzero1',
+    brand: 'Bvlgari',
+    brandKr: '불가리',
+    name: '비제로원 1밴드 링',
+    jpPrice: 267300,
+    krPrice: 2810000,
+    guestCardAllowed: true,
+    tag: '지점별 5% 가능'
+  },
+  {
+    id: 'bvlgari-serpenti',
+    brand: 'Bvlgari',
+    brandKr: '불가리',
+    name: '세르펜티 바이퍼 링',
+    jpPrice: 302500,
+    krPrice: 3190000,
+    guestCardAllowed: true,
+    tag: '지점별 5% 가능'
+  },
+  {
+    id: 'graff-laurence',
+    brand: 'Graff',
+    brandKr: '그라프',
+    name: '로렌스 그라프 시그니처',
+    jpPrice: 345000,
+    krPrice: 3650000,
+    guestCardAllowed: true,
+    tag: '지점별 5% 가능'
+  },
+  {
+    id: 'graff-spiral',
+    brand: 'Graff',
+    brandKr: '그라프',
+    name: '스파이럴 밴드 링',
+    jpPrice: 315000,
+    krPrice: 3300000,
+    guestCardAllowed: true,
+    tag: '지점별 5% 가능'
+  },
+  {
+    id: 'boucheron-quatre',
+    brand: 'Boucheron',
+    brandKr: '부쉐론',
+    name: '콰트로 클래식 스몰',
+    jpPrice: 627000,
+    krPrice: 6650000,
+    guestCardAllowed: true,
+    tag: '지점별 5% 가능'
+  },
+  {
+    id: 'boucheron-facette',
+    brand: 'Boucheron',
+    brandKr: '부쉐론',
+    name: '파셋 웨딩 밴드',
+    jpPrice: 279400,
+    krPrice: 2940000,
+    guestCardAllowed: true,
+    tag: '지점별 5% 가능'
+  },
+  {
     id: 'chaumet-bee',
     brand: 'Chaumet',
+    brandKr: '쇼메',
     name: '비 마이 러브 링',
     jpPrice: 163900,
     krPrice: 1740000,
@@ -60,11 +146,12 @@ let PRESETS = [
     tag: '백화점 5% 가능'
   },
   {
-    id: 'tasaki-piano',
-    brand: 'Tasaki',
-    name: '피아노 링',
-    jpPrice: 187000,
-    krPrice: 1980000,
+    id: 'chaumet-liens',
+    brand: 'Chaumet',
+    brandKr: '쇼메',
+    name: '리앙 에비당스 링',
+    jpPrice: 272800,
+    krPrice: 2880000,
     guestCardAllowed: true,
     tag: '백화점 5% 가능'
   }
@@ -74,11 +161,12 @@ let PRESETS = [
 let state = {
   mode: 1, // 1: single, 2: couple
   theme: 'dark',
+  activeBrandFilter: 'all',
   activePresetId: null,
   
   // Inputs
-  jpPrice: 250000,
-  krPrice: 2750000,
+  jpPrice: 193600,
+  krPrice: 2050000,
   
   // Japan Options
   hasGuestCard: false,
@@ -102,6 +190,7 @@ const dom = {
   singleModeBtn: document.getElementById('singleModeBtn'),
   coupleModeBtn: document.getElementById('coupleModeBtn'),
   themeToggleBtn: document.getElementById('themeToggleBtn'),
+  brandFilterBar: document.getElementById('brandFilterBar'),
   presetGrid: document.getElementById('presetGrid'),
   
   jpPrice: document.getElementById('jpPrice'),
@@ -178,7 +267,7 @@ async function loadExternalRingsData() {
       
       const hint = document.querySelector('.preset-hint');
       if (hint && data.lastUpdated) {
-        hint.textContent = `* 공식몰 기준 데이터 (최종 검증: ${data.lastUpdated})`;
+        hint.textContent = `* 7대 브랜드 공식몰 기준 데이터 (최종 검증: ${data.lastUpdated})`;
       }
     }
   } catch (err) {
@@ -221,10 +310,16 @@ async function fetchLiveExchangeRates() {
   }
 }
 
-// --- Render Presets ---
+// --- Render Presets with Brand Filtering ---
 function renderPresets() {
   dom.presetGrid.innerHTML = '';
-  PRESETS.forEach(item => {
+  
+  const filtered = PRESETS.filter(item => {
+    if (state.activeBrandFilter === 'all') return true;
+    return item.brand === state.activeBrandFilter;
+  });
+
+  filtered.forEach(item => {
     const card = document.createElement('div');
     card.className = `preset-card ${state.activePresetId === item.id ? 'active' : ''}`;
     card.dataset.id = item.id;
@@ -261,68 +356,62 @@ function applyPreset(preset) {
   state.hasGuestCard = preset.guestCardAllowed;
   dom.jpGuestCard.checked = preset.guestCardAllowed;
   
-  if (preset.guestCardAllowed) {
-    dom.guestCardNote.textContent = '백화점 5% 할인 적용 가능 브랜드';
+  // Brand-specific note
+  if (preset.brand === 'Cartier' || preset.brand === 'Chanel') {
+    dom.guestCardNote.textContent = `${preset.brand}는 대부분 백화점 5% 게스트카드 제외 매장입니다.`;
+    dom.guestCardNote.style.color = '#F87171';
+  } else if (preset.brand === 'Chaumet') {
+    dom.guestCardNote.textContent = '쇼메는 대부분 백화점에서 5% 게스트카드 할인이 적용됩니다.';
     dom.guestCardNote.style.color = '#34D399';
   } else {
-    dom.guestCardNote.textContent = `${preset.brand}는 대부분 5% 할인 제외 매장입니다.`;
-    dom.guestCardNote.style.color = '#F87171';
+    dom.guestCardNote.textContent = `${preset.brand}는 한큐, 이세탄, 다카시마야 등 지점별로 5% 적용 가능`;
+    dom.guestCardNote.style.color = '#38BDF8';
   }
   
   renderPresets();
   calculateAndRender();
-  showToast(`[${preset.brand}] ${preset.name} 가격이 적용되었습니다.`);
+  showToast(`[${preset.brand}] ${preset.name} 모델이 선택되었습니다.`);
 }
 
 // --- Calculation Logic ---
 function calculatePrices() {
   const multiplier = state.mode; // 1 for single, 2 for couple
   
-  // Base raw inputs
   const rawJpPrice = parseNumber(dom.jpPrice.value);
   const rawKrPrice = parseNumber(dom.krPrice.value);
   
-  // Multiplied prices for couple/single
   const baseJp = rawJpPrice * multiplier;
   const baseKr = rawKrPrice * multiplier;
   
-  // Exchange Rates
-  const jpyKrwRate = parseFloat(dom.jpyKrwRate.value) || 915.0; // per 100 JPY
+  const jpyKrwRate = parseFloat(dom.jpyKrwRate.value) || 915.0;
   const usdKrwRate = parseFloat(dom.usdKrwRate.value) || 1380.0;
   const usdJpyRate = parseFloat(dom.usdJpyRate.value) || 150.8;
   
-  // -------------------------------------------------------------
-  // 🇯🇵 JAPAN CALCULATION
-  // -------------------------------------------------------------
-  
-  // 1. Guest Card 5% Discount
+  // 🇯🇵 Japan Calculation
   const guestDiscountRate = state.hasGuestCard ? 0.05 : 0;
   const jpGuestDiscountJPY = Math.floor(baseJp * guestDiscountRate);
   const jpAfterGuestJPY = baseJp - jpGuestDiscountJPY;
   
-  // 2. Tax Free Refund (Based on Pre-tax price)
   const jpPreTaxJPY = jpAfterGuestJPY / 1.10;
   let taxRefundRate = 0;
   if (state.taxFreeType === 'dept') {
     taxRefundRate = 0.084545; // 10% tax minus ~1.545% dept fee
   } else if (state.taxFreeType === 'boutique') {
-    taxRefundRate = 0.10; // full 10% refund on pre-tax
+    taxRefundRate = 0.10;
   }
   
   const jpTaxRefundJPY = Math.floor(jpPreTaxJPY * taxRefundRate);
   const jpStoreNetJPY = jpAfterGuestJPY - jpTaxRefundJPY;
   
-  // 3. Payment Card Fee
   const cardFeePercent = parseFloat(dom.jpCardFee.value) || 0;
   const jpCardFeeJPY = Math.floor(jpStoreNetJPY * (cardFeePercent / 100));
   const jpTotalSpentJPY = jpStoreNetJPY + jpCardFeeJPY;
   
-  // 4. KRW Conversion for Japan Payment
   const jpPaidKRW = Math.round(jpTotalSpentJPY * (jpyKrwRate / 100));
   
-  // 5. Korean Customs Duty & VAT Calculation
+  // Korean Customs Duty & VAT
   const purchaseUSD = jpStoreNetJPY / usdJpyRate;
-  const dutyFreeAllowanceUSD = 800 * multiplier; // $800 per person
+  const dutyFreeAllowanceUSD = 800 * multiplier;
   const taxableUSD = Math.max(0, purchaseUSD - dutyFreeAllowanceUSD);
   const taxableKRW = Math.round(taxableUSD * usdKrwRate);
   
@@ -332,12 +421,10 @@ function calculatePrices() {
   let finalCustomsTax = 0;
   
   if (taxableKRW > 0) {
-    // Jewelry Standard Tariff: Duty 8% + VAT 10%
     customsDuty = Math.floor(taxableKRW * 0.08);
     customsVAT = Math.floor((taxableKRW + customsDuty) * 0.10);
     const baseCustomsTax = customsDuty + customsVAT;
     
-    // Self-Declaration 30% discount (Max 200,000 KRW per person)
     if (state.customsSelfDeclare) {
       const maxReduction = 200000 * multiplier;
       customsReduction = Math.min(Math.floor(baseCustomsTax * 0.30), maxReduction);
@@ -346,13 +433,9 @@ function calculatePrices() {
     finalCustomsTax = Math.max(0, baseCustomsTax - customsReduction);
   }
   
-  // Final Japan Total Cost
   const totalJapanKRW = jpPaidKRW + finalCustomsTax;
   
-  // -------------------------------------------------------------
-  // 🇰🇷 KOREA CALCULATION
-  // -------------------------------------------------------------
-  
+  // 🇰🇷 Korea Calculation
   let giftDiscountRate = 0;
   if (dom.krGiftDiscount.value === 'custom') {
     giftDiscountRate = parseFloat(dom.krCustomGift.value) || 0;
@@ -366,10 +449,6 @@ function calculatePrices() {
   const krDiscountKRW = Math.round(baseKr * (totalKrDiscountPercent / 100));
   const totalKoreaKRW = baseKr - krDiscountKRW;
   
-  // -------------------------------------------------------------
-  // COMPARISON & DIFFERENCE
-  // -------------------------------------------------------------
-  
   const diffKRW = totalKoreaKRW - totalJapanKRW;
   const savePercent = totalKoreaKRW > 0 ? (Math.abs(diffKRW) / totalKoreaKRW) * 100 : 0;
   
@@ -380,7 +459,6 @@ function calculatePrices() {
     baseJp,
     baseKr,
     
-    // Japan Breakdown
     jpGuestDiscountJPY,
     jpAfterGuestJPY,
     jpTaxRefundJPY,
@@ -389,7 +467,6 @@ function calculatePrices() {
     jpTotalSpentJPY,
     jpPaidKRW,
     
-    // Customs
     purchaseUSD,
     dutyFreeAllowanceUSD,
     taxableUSD,
@@ -400,12 +477,10 @@ function calculatePrices() {
     finalCustomsTax,
     totalJapanKRW,
     
-    // Korea Breakdown
     totalKrDiscountPercent,
     krDiscountKRW,
     totalKoreaKRW,
     
-    // Diff
     diffKRW,
     savePercent
   };
@@ -644,6 +719,18 @@ function showToast(message) {
 function setupEventListeners() {
   dom.singleModeBtn.addEventListener('click', () => setMode(1));
   dom.coupleModeBtn.addEventListener('click', () => setMode(2));
+  
+  // Brand Filter Tabs
+  if (dom.brandFilterBar) {
+    dom.brandFilterBar.querySelectorAll('.brand-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        dom.brandFilterBar.querySelectorAll('.brand-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        state.activeBrandFilter = tab.dataset.brand;
+        renderPresets();
+      });
+    });
+  }
   
   dom.themeToggleBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-theme');

@@ -1,9 +1,19 @@
 {
   "lastUpdated": "2026-09-05",
+  "targetBrands": [
+    "Cartier",
+    "Tiffany & Co.",
+    "Chanel",
+    "Bvlgari",
+    "Graff",
+    "Boucheron",
+    "Chaumet"
+  ],
   "rings": [
     {
       "id": "cartier-love-sm",
       "brand": "Cartier",
+      "brandKr": "까르띠에",
       "name": "러브 웨딩 밴드 (SM)",
       "jpPrice": 193600,
       "krPrice": 2050000,
@@ -15,6 +25,7 @@
     {
       "id": "cartier-love-cl",
       "brand": "Cartier",
+      "brandKr": "까르띠에",
       "name": "러브 링 (클래식)",
       "jpPrice": 284900,
       "krPrice": 2980000,
@@ -24,30 +35,21 @@
       "jpUrl": "https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/love-%E3%83%AA%E3%83%B3%E3%82%B0-B4084600.html"
     },
     {
-      "id": "chanel-coco-sm",
-      "brand": "Chanel",
-      "name": "코코 크러쉬 링 (스몰)",
-      "jpPrice": 245300,
-      "krPrice": 2590000,
+      "id": "cartier-trinity-cl",
+      "brand": "Cartier",
+      "brandKr": "까르띠에",
+      "name": "트리니티 링 (클래식)",
+      "jpPrice": 249700,
+      "krPrice": 2620000,
       "guestCardAllowed": false,
       "tag": "게스트카드 5% 불가",
-      "krUrl": "https://www.chanel.com/kr/fine-jewellery/p/J11785/coco-crush-ring-small-version/",
-      "jpUrl": "https://www.chanel.com/jp/fine-jewellery/p/J11785/coco-crush-ring-small-version/"
-    },
-    {
-      "id": "boucheron-quatre",
-      "brand": "Boucheron",
-      "name": "콰트로 클래식 스몰",
-      "jpPrice": 627000,
-      "krPrice": 6650000,
-      "guestCardAllowed": true,
-      "tag": "지점별 5% 가능",
-      "krUrl": "https://www.boucheron.com/ko-kr/quatre-classique-small-ring-JRG00200.html",
-      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-classique-small-ring-JRG00200.html"
+      "krUrl": "https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%B0%98%EC%A7%80/trinity-%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8B%9D-B4052700.html",
+      "jpUrl": "https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/trinity-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF-B4052700.html"
     },
     {
       "id": "tiffany-t-true",
       "brand": "Tiffany & Co.",
+      "brandKr": "티파니",
       "name": "T 트루 내로우 링",
       "jpPrice": 214500,
       "krPrice": 2270000,
@@ -57,8 +59,117 @@
       "jpUrl": "https://www.tiffany.co.jp/jewelry/rings/tiffany-t-true-narrow-ring-GRP10729/"
     },
     {
+      "id": "tiffany-band-ring",
+      "brand": "Tiffany & Co.",
+      "brandKr": "티파니",
+      "name": "티파니 밴드 링 (3P 다이아)",
+      "jpPrice": 269500,
+      "krPrice": 2850000,
+      "guestCardAllowed": true,
+      "tag": "지점별 5% 가능",
+      "krUrl": "https://www.tiffany.kr/jewelry/rings/tiffany-band-ring-GRP01703/",
+      "jpUrl": "https://www.tiffany.co.jp/jewelry/rings/tiffany-band-ring-GRP01703/"
+    },
+    {
+      "id": "chanel-coco-sm",
+      "brand": "Chanel",
+      "brandKr": "샤넬",
+      "name": "코코 크러쉬 링 (스몰)",
+      "jpPrice": 245300,
+      "krPrice": 2590000,
+      "guestCardAllowed": false,
+      "tag": "게스트카드 5% 불가",
+      "krUrl": "https://www.chanel.com/kr/fine-jewellery/p/J11785/coco-crush-ring-small-version/",
+      "jpUrl": "https://www.chanel.com/jp/fine-jewellery/p/J11785/coco-crush-ring-small-version/"
+    },
+    {
+      "id": "chanel-coco-md",
+      "brand": "Chanel",
+      "brandKr": "샤넬",
+      "name": "코코 크러쉬 링 (미디엄)",
+      "jpPrice": 424600,
+      "krPrice": 4480000,
+      "guestCardAllowed": false,
+      "tag": "게스트카드 5% 불가",
+      "krUrl": "https://www.chanel.com/kr/fine-jewellery/p/J10571/coco-crush-ring-medium-version/",
+      "jpUrl": "https://www.chanel.com/jp/fine-jewellery/p/J10571/coco-crush-ring-medium-version/"
+    },
+    {
+      "id": "bvlgari-bzero1",
+      "brand": "Bvlgari",
+      "brandKr": "불가리",
+      "name": "비제로원 1밴드 링",
+      "jpPrice": 267300,
+      "krPrice": 2810000,
+      "guestCardAllowed": true,
+      "tag": "지점별 5% 가능",
+      "krUrl": "https://www.bulgari.com/ko-kr/336014.html",
+      "jpUrl": "https://www.bulgari.com/ja-jp/336014.html"
+    },
+    {
+      "id": "bvlgari-serpenti",
+      "brand": "Bvlgari",
+      "brandKr": "불가리",
+      "name": "세르펜티 바이퍼 링",
+      "jpPrice": 302500,
+      "krPrice": 3190000,
+      "guestCardAllowed": true,
+      "tag": "지점별 5% 가능",
+      "krUrl": "https://www.bulgari.com/ko-kr/357288.html",
+      "jpUrl": "https://www.bulgari.com/ja-jp/357288.html"
+    },
+    {
+      "id": "graff-laurence",
+      "brand": "Graff",
+      "brandKr": "그라프",
+      "name": "로렌스 그라프 시그니처 링",
+      "jpPrice": 345000,
+      "krPrice": 3650000,
+      "guestCardAllowed": true,
+      "tag": "지점별 5% 가능",
+      "krUrl": "https://www.graff.com/kr-ko/jewellery/laurence-graff-signature-ring-RGR478.html",
+      "jpUrl": "https://www.graff.com/jp-ja/jewellery/laurence-graff-signature-ring-RGR478.html"
+    },
+    {
+      "id": "graff-spiral",
+      "brand": "Graff",
+      "brandKr": "그라프",
+      "name": "스파이럴 밴드 링",
+      "jpPrice": 315000,
+      "krPrice": 3300000,
+      "guestCardAllowed": true,
+      "tag": "지점별 5% 가능",
+      "krUrl": "https://www.graff.com/kr-ko/jewellery/spiral-band-RGR453.html",
+      "jpUrl": "https://www.graff.com/jp-ja/jewellery/spiral-band-RGR453.html"
+    },
+    {
+      "id": "boucheron-quatre",
+      "brand": "Boucheron",
+      "brandKr": "부쉐론",
+      "name": "콰트로 클래식 스몰 링",
+      "jpPrice": 627000,
+      "krPrice": 6650000,
+      "guestCardAllowed": true,
+      "tag": "지점별 5% 가능",
+      "krUrl": "https://www.boucheron.com/ko-kr/quatre-classique-small-ring-JRG00200.html",
+      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-classique-small-ring-JRG00200.html"
+    },
+    {
+      "id": "boucheron-facette",
+      "brand": "Boucheron",
+      "brandKr": "부쉐론",
+      "name": "파셋 웨딩 밴드 (플래티넘)",
+      "jpPrice": 279400,
+      "krPrice": 2940000,
+      "guestCardAllowed": true,
+      "tag": "지점별 5% 가능",
+      "krUrl": "https://www.boucheron.com/ko-kr/facette-wedding-band-platinum-JAL00014.html",
+      "jpUrl": "https://www.boucheron.com/ja-jp/facette-wedding-band-platinum-JAL00014.html"
+    },
+    {
       "id": "chaumet-bee",
       "brand": "Chaumet",
+      "brandKr": "쇼메",
       "name": "비 마이 러브 링",
       "jpPrice": 163900,
       "krPrice": 1740000,
@@ -68,15 +179,16 @@
       "jpUrl": "https://www.chaumet.com/jp/bee-my-love-ring-083434"
     },
     {
-      "id": "tasaki-piano",
-      "brand": "Tasaki",
-      "name": "피아노 링",
-      "jpPrice": 187000,
-      "krPrice": 1980000,
+      "id": "chaumet-liens",
+      "brand": "Chaumet",
+      "brandKr": "쇼메",
+      "name": "리앙 에비당스 링",
+      "jpPrice": 272800,
+      "krPrice": 2880000,
       "guestCardAllowed": true,
       "tag": "백화점 5% 가능",
-      "krUrl": "https://www.tasaki.co.kr/jewellery/bridal/piano/",
-      "jpUrl": "https://www.tasaki.co.jp/jewellery/bridal/piano/"
+      "krUrl": "https://www.chaumet.com/kr/liens-evidence-ring-082218",
+      "jpUrl": "https://www.chaumet.com/jp/liens-evidence-ring-082218"
     }
   ]
 }
