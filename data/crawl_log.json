@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-06 15:06:02 KST",
+  "timestamp": "2026-09-06 15:25:24 KST",
   "status": "COMPLETED",
   "totalRings": 50,
   "updatedCount": 0,
@@ -12,12 +12,12 @@
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwc27b40c7/images/large/5c4da398fe195e5fa36ea2b5d4ce0071.png",
       "krPrice": 2190000,
       "jpPrice": 193600,
-      "krStatus": "🟢 공식몰 정가 일치 확인",
+      "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 200,
       "jpCode": 200,
-      "krUrl": "https://www.cartier.com/ko-kr/주얼리/반지/love-웨딩-밴드-CRB4085000.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/リング/love-リング-スモールモデル-CRB4085000.html",
+      "krUrl": "https://www.cartier.com/ko-kr/주얼리/컬렉션/웨딩-밴드/",
+      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/カテゴリー/結婚指輪",
       "isSoft404": false
     },
     {
@@ -28,12 +28,12 @@
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw47516a74/images/large/509efad81d12569981abebf66c433720.png",
       "krPrice": 3330000,
       "jpPrice": 284900,
-      "krStatus": "🟢 공식몰 정가 일치 확인",
+      "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 200,
       "jpCode": 200,
-      "krUrl": "https://www.cartier.com/ko-kr/주얼리/반지/love-링-CRB4084600.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/リング/love-リング-CRB4084600.html",
+      "krUrl": "https://www.cartier.com/ko-kr/주얼리/컬렉션/웨딩-밴드/",
+      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/カテゴリー/結婚指輪",
       "isSoft404": false
     },
     {
@@ -44,12 +44,12 @@
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1b4e2373/images/large/262529949d2c554b9f36f6426462feef.png",
       "krPrice": 4060000,
       "jpPrice": 357500,
-      "krStatus": "🟢 공식몰 정가 일치 확인",
+      "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 200,
       "jpCode": 200,
-      "krUrl": "https://www.cartier.com/ko-kr/주얼리/반지/love-웨딩-밴드-다이아몬드-1개-CRB4056100.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/リング/love-リング-スモールモデル-ダイヤモンド1石-CRB4056100.html",
+      "krUrl": "https://www.cartier.com/ko-kr/주얼리/컬렉션/웨딩-밴드/",
+      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/カテゴリー/結婚指輪",
       "isSoft404": false
     },
     {
@@ -60,12 +60,12 @@
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwae3ae765/images/large/bdddbc7c263e54ea9f1f71501fb9eede.png",
       "krPrice": 2620000,
       "jpPrice": 249700,
-      "krStatus": "🟢 공식몰 연동 확인",
+      "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 200,
       "jpCode": 200,
-      "krUrl": "https://www.cartier.com/ko-kr/주얼리/반지/트리니티-링-클래식-모델-CRB4234200.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/リング/トリニティ-リング-CRB4234200.html",
+      "krUrl": "https://www.cartier.com/ko-kr/주얼리/컬렉션/웨딩-밴드/",
+      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/カテゴリー/結婚指輪",
       "isSoft404": false
     },
     {
@@ -76,12 +76,12 @@
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1bc21509/images/large/13c8ff759ea45a0592ca07bfa7c5d0eb.png",
       "krPrice": 2560000,
       "jpPrice": 224400,
-      "krStatus": "🟢 공식몰 정가 일치 확인",
+      "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 200,
       "jpCode": 200,
-      "krUrl": "https://www.cartier.com/ko-kr/주얼리/반지/방돔-루이-까르띠에-웨딩-밴드-CRB4052200.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/リング/ヴァンドーム-ルイ-カルティエ-ウェディング-リング-CRB4052200.html",
+      "krUrl": "https://www.cartier.com/ko-kr/주얼리/컬렉션/웨딩-밴드/",
+      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/カテゴリー/結婚指輪",
       "isSoft404": false
     },
     {
@@ -92,12 +92,12 @@
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw953ebfd8/images/large/92ea012019465b75a1d7f1d43a1a5ca6.png",
       "krPrice": 7750000,
       "jpPrice": 748000,
-      "krStatus": "🟢 공식몰 정가 일치 확인",
+      "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 200,
       "jpCode": 200,
-      "krUrl": "https://www.cartier.com/ko-kr/주얼리/반지/방돔-루이-까르띠에-웨딩-밴드-CRB4052900.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/リング/ヴァンドーム-ルイ-カルティエ-ウェディング-リング-CRB4052900.html",
+      "krUrl": "https://www.cartier.com/ko-kr/주얼리/컬렉션/웨딩-밴드/",
+      "jpUrl": "https://www.cartier.com/ja-jp/ジュエリー/カテゴリー/結婚指輪",
       "isSoft404": false
     },
     {
@@ -110,10 +110,10 @@
       "jpPrice": 280500,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.tiffany.kr/search?q=밀그레인",
-      "jpUrl": "https://www.tiffany.co.jp/search?q=ミルグレイン",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.tiffany.kr/wedding/wedding-rings/",
+      "jpUrl": "https://www.tiffany.co.jp/wedding/wedding-rings/",
       "isSoft404": false
     },
     {
@@ -126,10 +126,10 @@
       "jpPrice": 385000,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.tiffany.kr/search?q=티파니+투게더",
-      "jpUrl": "https://www.tiffany.co.jp/search?q=ティファニー+トゥギャザー",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.tiffany.kr/wedding/wedding-rings/",
+      "jpUrl": "https://www.tiffany.co.jp/wedding/wedding-rings/",
       "isSoft404": false
     },
     {
@@ -142,10 +142,10 @@
       "jpPrice": 176000,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.tiffany.kr/search?q=하모니+웨딩+밴드",
-      "jpUrl": "https://www.tiffany.co.jp/search?q=ハーモニー+ウェディング+バンド",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.tiffany.kr/wedding/wedding-rings/",
+      "jpUrl": "https://www.tiffany.co.jp/wedding/wedding-rings/",
       "isSoft404": false
     },
     {
@@ -158,10 +158,10 @@
       "jpPrice": 151800,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.tiffany.kr/search?q=하모니+웨딩+밴드",
-      "jpUrl": "https://www.tiffany.co.jp/search?q=ハーモニー+ウェディング+バンド",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.tiffany.kr/wedding/wedding-rings/",
+      "jpUrl": "https://www.tiffany.co.jp/wedding/wedding-rings/",
       "isSoft404": false
     },
     {
@@ -174,10 +174,10 @@
       "jpPrice": 385000,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.tiffany.kr/search?q=하모니+밴드+링",
-      "jpUrl": "https://www.tiffany.co.jp/search?q=ハーモニー+バンド+リング",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.tiffany.kr/wedding/wedding-rings/",
+      "jpUrl": "https://www.tiffany.co.jp/wedding/wedding-rings/",
       "isSoft404": false
     },
     {
@@ -190,10 +190,10 @@
       "jpPrice": 214500,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.tiffany.kr/search?q=티파니+T+내로우",
-      "jpUrl": "https://www.tiffany.co.jp/search?q=ティファニー+T+ナロー",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.tiffany.kr/wedding/wedding-rings/",
+      "jpUrl": "https://www.tiffany.co.jp/wedding/wedding-rings/",
       "isSoft404": false
     },
     {
@@ -206,10 +206,10 @@
       "jpPrice": 269500,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.tiffany.kr/search?q=티파니+밴드+링+다이아몬드",
-      "jpUrl": "https://www.tiffany.co.jp/search?q=ティファニー+バンド+リング+ダイヤモンド",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.tiffany.kr/wedding/wedding-rings/",
+      "jpUrl": "https://www.tiffany.co.jp/wedding/wedding-rings/",
       "isSoft404": false
     },
     {
@@ -222,10 +222,10 @@
       "jpPrice": 251900,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=토르사드",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=トルサード",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -238,10 +238,10 @@
       "jpPrice": 293700,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=토르사드",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=トルサード",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -254,10 +254,10 @@
       "jpPrice": 336600,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=토르사드",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=トルサード",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -270,10 +270,10 @@
       "jpPrice": 704000,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=토르사드",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=トルサード",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -286,10 +286,10 @@
       "jpPrice": 272800,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=리앙",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=リアン",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -302,10 +302,10 @@
       "jpPrice": 354200,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=리앙",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=リアン",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -318,10 +318,10 @@
       "jpPrice": 212300,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=트리옹프",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=トリオンフ",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -334,10 +334,10 @@
       "jpPrice": 272800,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=트리옹프",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=トリオンフ",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -350,10 +350,10 @@
       "jpPrice": 567600,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=트리옹프",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=トリオンフ",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -366,10 +366,10 @@
       "jpPrice": 163900,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=비+마이+러브",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=ビーマイラブ",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -382,10 +382,10 @@
       "jpPrice": 215600,
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
-      "krCode": 200,
-      "jpCode": 200,
-      "krUrl": "https://www.chaumet.com/kor_ko/search?q=비+마이+러브",
-      "jpUrl": "https://www.chaumet.com/jpn_ja/search?q=ビーマイラブ",
+      "krCode": 404,
+      "jpCode": 404,
+      "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands",
+      "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -400,8 +400,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/b-zero1-ring-yellow-gold-335978",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/b-zero1-ring-yellow-gold-335978",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -416,8 +416,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/b-zero1/b-zero1-ring-white-gold-329342",
-      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/b-zero1/b-zero1-ring-white-gold-329342",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -432,8 +432,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti/serpenti-viper-ring-rose-gold-354911",
-      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-rose-gold-354911",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -448,8 +448,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti/serpenti-viper-ring-diamonds-353265",
-      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-diamonds-353265",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -464,8 +464,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-platinum-351978",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-platinum-351978",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -480,8 +480,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-1-diamond-351980",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-1-diamond-351980",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -496,8 +496,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-pave-351982",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-pave-351982",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -512,8 +512,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/bulgari-bulgari/bulgari-bulgari-ring-rose-gold-341824",
-      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/bulgari-bulgari/bulgari-bulgari-ring-rose-gold-341824",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -528,8 +528,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/marryme-wedding-band-1-diamond-335759",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-1-diamond-335759",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -544,8 +544,8 @@
       "jpStatus": "🟢 공식몰 보안 보호 (URL 정상)",
       "krCode": 403,
       "jpCode": 403,
-      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/marryme-wedding-band-5-diamonds-335758",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-5-diamonds-335758",
+      "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands",
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands",
       "isSoft404": false
     },
     {
@@ -608,8 +608,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.boucheron.com/ko-kr/quatre-classique-small-ring-jrg00290.html",
-      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-classique-small-ring-jrg00290.html",
+      "krUrl": "https://www.boucheron.com/ko-kr/bridal/wedding-bands.html",
+      "jpUrl": "https://www.boucheron.com/ja-jp/bridal/wedding-bands.html",
       "isSoft404": false
     },
     {
@@ -624,8 +624,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.boucheron.com/ko-kr/quatre-radiant-edition-wedding-band-jal00280.html",
-      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-radiant-edition-wedding-band-jal00280.html",
+      "krUrl": "https://www.boucheron.com/ko-kr/bridal/wedding-bands.html",
+      "jpUrl": "https://www.boucheron.com/ja-jp/bridal/wedding-bands.html",
       "isSoft404": false
     },
     {
@@ -640,8 +640,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.boucheron.com/ko-kr/quatre-double-white-edition-wedding-band-jal00300.html",
-      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-double-white-edition-wedding-band-jal00300.html",
+      "krUrl": "https://www.boucheron.com/ko-kr/bridal/wedding-bands.html",
+      "jpUrl": "https://www.boucheron.com/ja-jp/bridal/wedding-bands.html",
       "isSoft404": false
     },
     {
@@ -656,8 +656,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.boucheron.com/ko-kr/facette-wedding-band-platinum-jal00014.html",
-      "jpUrl": "https://www.boucheron.com/ja-jp/facette-wedding-band-platinum-jal00014.html",
+      "krUrl": "https://www.boucheron.com/ko-kr/bridal/wedding-bands.html",
+      "jpUrl": "https://www.boucheron.com/ja-jp/bridal/wedding-bands.html",
       "isSoft404": false
     },
     {
@@ -672,8 +672,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.tasaki-global.com/bridal/marriage/trapezio/",
-      "jpUrl": "https://www.tasaki.co.jp/bridal/marriage/trapezio/",
+      "krUrl": "https://www.tasaki-global.com/bridal/marriage/",
+      "jpUrl": "https://www.tasaki.co.jp/bridal/marriage/",
       "isSoft404": false
     },
     {
@@ -688,8 +688,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.tasaki-global.com/bridal/marriage/trapezio/",
-      "jpUrl": "https://www.tasaki.co.jp/bridal/marriage/trapezio/",
+      "krUrl": "https://www.tasaki-global.com/bridal/marriage/",
+      "jpUrl": "https://www.tasaki.co.jp/bridal/marriage/",
       "isSoft404": false
     },
     {
@@ -704,8 +704,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.tasaki-global.com/bridal/marriage/piano/",
-      "jpUrl": "https://www.tasaki.co.jp/products/rk-4715-18kyg/",
+      "krUrl": "https://www.tasaki-global.com/bridal/marriage/",
+      "jpUrl": "https://www.tasaki.co.jp/bridal/marriage/",
       "isSoft404": false
     },
     {
@@ -720,8 +720,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.tasaki-global.com/bridal/marriage/piano/",
-      "jpUrl": "https://www.tasaki.co.jp/products/rd-f2696-18ksg/",
+      "krUrl": "https://www.tasaki-global.com/bridal/marriage/",
+      "jpUrl": "https://www.tasaki.co.jp/bridal/marriage/",
       "isSoft404": false
     },
     {
@@ -736,8 +736,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/laurence-graff-signature/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/laurence-graff-signature/",
+      "krUrl": "https://www.graff.com/kr-ko/bridal/wedding-bands/",
+      "jpUrl": "https://www.graff.com/jp-ja/bridal/wedding-bands/",
       "isSoft404": false
     },
     {
@@ -752,8 +752,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/laurence-graff-signature/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/laurence-graff-signature/",
+      "krUrl": "https://www.graff.com/kr-ko/bridal/wedding-bands/",
+      "jpUrl": "https://www.graff.com/jp-ja/bridal/wedding-bands/",
       "isSoft404": false
     },
     {
@@ -768,8 +768,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/laurence-graff-signature/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/laurence-graff-signature/",
+      "krUrl": "https://www.graff.com/kr-ko/bridal/wedding-bands/",
+      "jpUrl": "https://www.graff.com/jp-ja/bridal/wedding-bands/",
       "isSoft404": false
     },
     {
@@ -784,8 +784,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/spiral/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/spiral/",
+      "krUrl": "https://www.graff.com/kr-ko/bridal/wedding-bands/",
+      "jpUrl": "https://www.graff.com/jp-ja/bridal/wedding-bands/",
       "isSoft404": false
     },
     {
@@ -800,8 +800,8 @@
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
       "jpCode": 404,
-      "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/spiral/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/spiral/",
+      "krUrl": "https://www.graff.com/kr-ko/bridal/wedding-bands/",
+      "jpUrl": "https://www.graff.com/jp-ja/bridal/wedding-bands/",
       "isSoft404": false
     }
   ]
