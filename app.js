@@ -17,7 +17,7 @@ let PRESETS = [
     tag: "게스트카드 5% 불가",
     imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwc27b40c7/images/large/5c4da398fe195e5fa36ea2b5d4ce0071.png",
     krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/love/love-wedding-band-small-model-CRB4085000.html",
-    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/love/love-wedding-band-small-model-CRB4085000.html"
+    jpUrl: "https://www.cartier.jp/ja-jp/search?q=CRB4085000"
   },
   {
     id: "cartier-love-cl",
@@ -30,7 +30,7 @@ let PRESETS = [
     tag: "게스트카드 5% 불가",
     imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw47516a74/images/large/509efad81d12569981abebf66c433720.png",
     krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/love/love-ring-classic-model-CRB4084600.html",
-    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/love/love-ring-classic-model-CRB4084600.html"
+    jpUrl: "https://www.cartier.jp/ja-jp/search?q=CRB4084600"
   },
   {
     id: "cartier-love-1d",
@@ -43,7 +43,7 @@ let PRESETS = [
     tag: "게스트카드 5% 불가",
     imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1b4e2373/images/large/262529949d2c554b9f36f6426462feef.png",
     krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/love/love-ring-1-diamond-CRB4032400.html",
-    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/love/love-ring-1-diamond-CRB4032400.html"
+    jpUrl: "https://www.cartier.jp/ja-jp/search?q=CRB4032400"
   },
   {
     id: "cartier-trinity-cl",
@@ -56,7 +56,7 @@ let PRESETS = [
     tag: "게스트카드 5% 불가",
     imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwae3ae765/images/large/bdddbc7c263e54ea9f1f71501fb9eede.png",
     krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/trinity/trinity-ring-classic-model-CRB4234200.html",
-    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/trinity/trinity-ring-classic-model-CRB4234200.html"
+    jpUrl: "https://www.cartier.jp/ja-jp/search?q=CRB4234200"
   },
   {
     id: "cartier-vendome-35",
@@ -69,7 +69,7 @@ let PRESETS = [
     tag: "게스트카드 5% 불가",
     imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1bc21509/images/large/13c8ff759ea45a0592ca07bfa7c5d0eb.png",
     krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/vendome-louis-cartier-wedding-band-3-5mm-CRB4052200.html",
-    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/vendome-louis-cartier-wedding-band-3-5mm-CRB4052200.html"
+    jpUrl: "https://www.cartier.jp/ja-jp/search?q=CRB4052200"
   },
   {
     id: "cartier-vendome-pave",
@@ -82,7 +82,7 @@ let PRESETS = [
     tag: "게스트카드 5% 불가",
     imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw953ebfd8/images/large/92ea012019465b75a1d7f1d43a1a5ca6.png",
     krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/vendome-louis-cartier-wedding-band-pave-CRB4052900.html",
-    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/vendome-louis-cartier-wedding-band-pave-CRB4052900.html"
+    jpUrl: "https://www.cartier.jp/ja-jp/search?q=CRB4052900"
   },
   {
     id: "tiffany-milgrain-4mm",
