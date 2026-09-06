@@ -756,7 +756,6 @@ const dom = {
   quickSummaryModal: document.getElementById('quickSummaryModal'),
   quickSearchInput: document.getElementById('quickSearchInput'),
   clearQuickSearchBtn: document.getElementById('clearQuickSearchBtn'),
-  quickSortSelect: document.getElementById('quickSortSelect'),
   quickBrandPills: document.getElementById('quickBrandPills'),
   quickSummaryTableBody: document.getElementById('quickSummaryTableBody')
 };
@@ -913,90 +912,8 @@ function renderCrawlLogModal(logData, filterQuery = '') {
 // --- Quick Summary Table (Ctrl + S) Logic ---
 let quickState = {
   brandFilter: 'all',
-  searchQuery: '',
-  sortBy: 'diffDesc'
+  searchQuery: ''
 };
-
-function calculateForPreset(preset) {
-  const multiplier = state.mode;
-  const rawJpPrice = preset.jpPrice;
-  const rawKrPrice = preset.krPrice;
-  
-  const baseJp = rawJpPrice * multiplier;
-  const baseKr = rawKrPrice * multiplier;
-  
-  const jpyKrwRate = parseFloat(dom.jpyKrwRate.value) || state.jpyKrwRate || 915.0;
-  const usdKrwRate = parseFloat(dom.usdKrwRate.value) || state.usdKrwRate || 1380.0;
-  const usdJpyRate = parseFloat(dom.usdJpyRate.value) || state.usdJpyRate || 150.8;
-  
-  // Japan Guest Card 5%
-  const guestDiscountRate = preset.guestCardAllowed ? 0.05 : 0;
-  const jpGuestDiscountJPY = Math.floor(baseJp * guestDiscountRate);
-  const jpAfterGuestJPY = baseJp - jpGuestDiscountJPY;
-  
-  // Tax Free refund (Dept 8.45% vs Boutique 10.0%)
-  let taxRefundRate = 0;
-  if (state.taxFreeType === 'dept') {
-    taxRefundRate = 0.084545;
-  } else if (state.taxFreeType === 'boutique') {
-    taxRefundRate = 0.10;
-  }
-  const jpPreTaxJPY = jpAfterGuestJPY / 1.10;
-  const jpTaxRefundJPY = Math.floor(jpPreTaxJPY * taxRefundRate);
-  const jpStoreNetJPY = jpAfterGuestJPY - jpTaxRefundJPY;
-  
-  // Payment card fee
-  const cardFeePercent = parseFloat(dom.jpCardFee.value) || 0;
-  const jpCardFeeJPY = Math.floor(jpStoreNetJPY * (cardFeePercent / 100));
-  const jpTotalSpentJPY = jpStoreNetJPY + jpCardFeeJPY;
-  const jpPaidKRW = Math.round(jpTotalSpentJPY * (jpyKrwRate / 100));
-  
-  // Korean Customs Tax
-  const purchaseUSD = jpStoreNetJPY / usdJpyRate;
-  const dutyFreeAllowanceUSD = 800 * multiplier;
-  const taxableUSD = Math.max(0, purchaseUSD - dutyFreeAllowanceUSD);
-  const taxableKRW = Math.round(taxableUSD * usdKrwRate);
-  
-  let customsDuty = 0;
-  let customsVAT = 0;
-  let customsReduction = 0;
-  let finalCustomsTax = 0;
-  
-  if (taxableKRW > 0) {
-    customsDuty = Math.floor(taxableKRW * 0.08);
-    customsVAT = Math.floor((taxableKRW + customsDuty) * 0.10);
-    const baseCustomsTax = customsDuty + customsVAT;
-    if (state.customsSelfDeclare) {
-      const maxReduction = 200000 * multiplier;
-      customsReduction = Math.min(Math.floor(baseCustomsTax * 0.30), maxReduction);
-    }
-    finalCustomsTax = Math.max(0, baseCustomsTax - customsReduction);
-  }
-  
-  const totalJapanKRW = jpPaidKRW + finalCustomsTax;
-  
-  // Korea store net
-  let giftDiscountRate = 0;
-  if (dom.krGiftDiscount.value === 'custom') {
-    giftDiscountRate = parseFloat(dom.krCustomGift.value) || 0;
-  } else {
-    giftDiscountRate = parseFloat(dom.krGiftDiscount.value) || 0;
-  }
-  const mileageRate = parseFloat(dom.krMileage.value) || 0;
-  const totalKrDiscountPercent = giftDiscountRate + mileageRate;
-  const krDiscountKRW = Math.round(baseKr * (totalKrDiscountPercent / 100));
-  const totalKoreaKRW = baseKr - krDiscountKRW;
-  
-  const diffKRW = totalKoreaKRW - totalJapanKRW;
-  const savePercent = totalKoreaKRW > 0 ? (Math.abs(diffKRW) / totalKoreaKRW) * 100 : 0;
-  
-  return {
-    totalJapanKRW,
-    totalKoreaKRW,
-    diffKRW,
-    savePercent
-  };
-}
 
 function openQuickSummaryModal() {
   if (!dom.quickSummaryModal) return;
@@ -1016,41 +933,22 @@ function renderQuickSummary() {
   if (!dom.quickSummaryTableBody) return;
   dom.quickSummaryTableBody.innerHTML = '';
   
-  let list = PRESETS.map(p => {
-    const calc = calculateForPreset(p);
-    return {
-      preset: p,
-      ...calc
-    };
-  });
+  let list = PRESETS;
   
   // Filter by brand pill
   if (quickState.brandFilter !== 'all') {
-    list = list.filter(item => item.preset.brand === quickState.brandFilter);
+    list = list.filter(p => p.brand === quickState.brandFilter);
   }
   
   // Filter by search query
   const query = quickState.searchQuery.toLowerCase().trim();
   if (query) {
-    list = list.filter(item => {
-      const name = item.preset.name.toLowerCase();
-      const brand = item.preset.brand.toLowerCase();
-      const brandKr = (item.preset.brandKr || '').toLowerCase();
+    list = list.filter(p => {
+      const name = (p.name || '').toLowerCase();
+      const brand = (p.brand || '').toLowerCase();
+      const brandKr = (p.brandKr || '').toLowerCase();
       return name.includes(query) || brand.includes(query) || brandKr.includes(query);
     });
-  }
-  
-  // Sort
-  if (quickState.sortBy === 'diffDesc') {
-    list.sort((a, b) => b.diffKRW - a.diffKRW);
-  } else if (quickState.sortBy === 'diffAsc') {
-    list.sort((a, b) => a.diffKRW - b.diffKRW);
-  } else if (quickState.sortBy === 'jpPriceAsc') {
-    list.sort((a, b) => a.preset.jpPrice - b.preset.jpPrice);
-  } else if (quickState.sortBy === 'krPriceAsc') {
-    list.sort((a, b) => a.preset.krPrice - b.preset.krPrice);
-  } else if (quickState.sortBy === 'brand') {
-    list.sort((a, b) => (a.preset.brandKr || a.preset.brand).localeCompare(b.preset.brandKr || b.preset.brand));
   }
   
   if (list.length === 0) {
@@ -1064,68 +962,47 @@ function renderQuickSummary() {
     return;
   }
   
-  list.forEach(item => {
-    const p = item.preset;
+  list.forEach(p => {
     const tr = document.createElement('tr');
     tr.className = `quick-row ${state.activePresetId === p.id ? 'active-row' : ''}`;
     
-    const tagClass = p.guestCardAllowed ? 'guest-ok' : 'no-guest';
-    const tagTxt = p.guestCardAllowed ? '게스트카드 5% 가능' : '게스트카드 제외';
-    const thumbHtml = p.imageUrl
-      ? `<div class="quick-thumb"><img src="${p.imageUrl}" alt="${p.name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.style.display='none'" /></div>`
-      : '';
+    const krUrlHtml = p.krUrl 
+      ? `<a href="${p.krUrl}" target="_blank" rel="noopener noreferrer" class="quick-url-link kr" title="한국 공식몰 새창 열기">한국 공식몰 ↗</a>`
+      : `<span class="quick-no-url">-</span>`;
       
-    let diffBadgeHtml = '';
-    if (item.diffKRW > 0) {
-      diffBadgeHtml = `
-        <div class="diff-badge-jp-win">
-          <span class="save-amount">🇯🇵 +${formatKRW(item.diffKRW)} 절약</span>
-          <span class="save-rate">일본이 ${item.savePercent.toFixed(1)}% 저렴</span>
-        </div>
-      `;
-    } else if (item.diffKRW < 0) {
-      diffBadgeHtml = `
-        <div class="diff-badge-kr-win">
-          <span class="save-amount">🇰🇷 +${formatKRW(Math.abs(item.diffKRW))} 절약</span>
-          <span class="save-rate">한국이 ${item.savePercent.toFixed(1)}% 저렴</span>
-        </div>
-      `;
-    } else {
-      diffBadgeHtml = `<span class="diff-badge-same">가격 동일</span>`;
-    }
-    
+    const jpUrlHtml = p.jpUrl 
+      ? `<a href="${p.jpUrl}" target="_blank" rel="noopener noreferrer" class="quick-url-link jp" title="일본 공식몰 새창 열기">일본 공식몰 ↗</a>`
+      : `<span class="quick-no-url">-</span>`;
+
     tr.innerHTML = `
-      <td>
-        <div class="quick-model-cell">
-          ${thumbHtml}
-          <div class="quick-model-text">
-            <span class="quick-brand-label">${p.brandKr || p.brand}</span>
-            <span class="quick-ring-name">${p.name}</span>
-            <span class="quick-guest-tag ${tagClass}">${tagTxt}</span>
-          </div>
-        </div>
+      <td class="td-brand">
+        <span class="quick-brand-badge">${p.brandKr || p.brand}</span>
       </td>
-      <td>
-        <div class="quick-price-col">
-          <span class="quick-net-val">${formatKRW(item.totalKoreaKRW)}</span>
-          <span class="quick-raw-val">정가 ₩${p.krPrice.toLocaleString()}</span>
-        </div>
+      <td class="td-name">
+        <span class="quick-ring-name-simple">${p.name}</span>
       </td>
-      <td>
-        <div class="quick-price-col">
-          <span class="quick-net-val">${formatKRW(item.totalJapanKRW)}</span>
-          <span class="quick-raw-val">정가 ¥${p.jpPrice.toLocaleString()}</span>
-        </div>
+      <td class="td-url">
+        ${krUrlHtml}
       </td>
-      <td>
-        ${diffBadgeHtml}
+      <td class="td-url">
+        ${jpUrlHtml}
       </td>
-      <td>
-        <button type="button" class="quick-select-btn">선택 ↗</button>
+      <td class="td-action">
+        <button type="button" class="quick-select-btn" title="계산기에 이 모델 적용">선택</button>
       </td>
     `;
     
-    tr.addEventListener('click', () => {
+    const btn = tr.querySelector('.quick-select-btn');
+    if (btn) {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        applyPreset(p);
+        closeQuickSummaryModal();
+      });
+    }
+
+    tr.addEventListener('click', (e) => {
+      if (e.target.tagName && e.target.tagName.toLowerCase() === 'a') return;
       applyPreset(p);
       closeQuickSummaryModal();
     });
@@ -1646,13 +1523,6 @@ function setupEventListeners() {
         dom.quickSearchInput.focus();
         renderQuickSummary();
       }
-    });
-  }
-
-  if (dom.quickSortSelect) {
-    dom.quickSortSelect.addEventListener('change', (e) => {
-      quickState.sortBy = e.target.value;
-      renderQuickSummary();
     });
   }
 
