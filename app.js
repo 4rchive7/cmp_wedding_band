@@ -16,8 +16,8 @@ let PRESETS = [
     "guestCardAllowed": false,
     "tag": "게스트카드 5% 불가",
     "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwc27b40c7/images/large/5c4da398fe195e5fa36ea2b5d4ce0071.png",
-    "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/love/love-wedding-band-small-model-CRB4085000.html",
-    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/rings/love-%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%81%E3%82%B9%E3%83%A2%E3%83%BC%E3%83%AB%E3%83%A2%E3%83%87%E3%83%AB-CRB4085000.html"
+    "krUrl": "https://www.cartier.com/ko-kr/jewelry/collections/love/",
+    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/collections/love/"
   },
   {
     "id": "cartier-love-cl",
@@ -29,8 +29,8 @@ let PRESETS = [
     "guestCardAllowed": false,
     "tag": "게스트카드 5% 불가",
     "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw47516a74/images/large/509efad81d12569981abebf66c433720.png",
-    "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/love/love-ring-classic-model-CRB4084600.html",
-    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/rings/love-%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%81%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%87%E3%83%AB-CRB4084600.html"
+    "krUrl": "https://www.cartier.com/ko-kr/jewelry/collections/love/",
+    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/collections/love/"
   },
   {
     "id": "cartier-love-1d",
@@ -42,8 +42,8 @@ let PRESETS = [
     "guestCardAllowed": false,
     "tag": "게스트카드 5% 불가",
     "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1b4e2373/images/large/262529949d2c554b9f36f6426462feef.png",
-    "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/love/love-wedding-band-1-diamond-CRB4056100.html",
-    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/rings/love-%E3%82%A6%E3%82%A7%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%81%E3%83%80%E3%82%A4%E3%83%A4%E3%83%A2%E3%83%B3%E3%83%891%E5%80%8B-CRB4056100.html"
+    "krUrl": "https://www.cartier.com/ko-kr/jewelry/collections/love/",
+    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/collections/love/"
   },
   {
     "id": "cartier-trinity-cl",
@@ -55,8 +55,8 @@ let PRESETS = [
     "guestCardAllowed": false,
     "tag": "게스트카드 5% 불가",
     "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwae3ae765/images/large/bdddbc7c263e54ea9f1f71501fb9eede.png",
-    "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/trinity/trinity-ring-classic-model-CRB4234200.html",
-    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/rings/trinity-%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%81%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%87%E3%83%AB-CRB4234200.html"
+    "krUrl": "https://www.cartier.com/ko-kr/jewelry/collections/trinity/",
+    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/collections/trinity/"
   },
   {
     "id": "cartier-vendome-35",
@@ -68,8 +68,8 @@ let PRESETS = [
     "guestCardAllowed": false,
     "tag": "게스트카드 5% 불가",
     "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1bc21509/images/large/13c8ff759ea45a0592ca07bfa7c5d0eb.png",
-    "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/vendome-louis-cartier-wedding-band-3-5mm-CRB4052200.html",
-    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/rings/%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%89%E3%83%BC%E3%83%A0-%E3%83%AB%E3%82%A4-%E3%82%AB%E3%83%AB%E3%83%86%E3%82%A3%E3%82%A8-%E3%82%A6%E3%82%A7%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%81%E5%B9%853.5mm-CRB4052200.html"
+    "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/",
+    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/rings/"
   },
   {
     "id": "cartier-vendome-pave",
@@ -81,8 +81,8 @@ let PRESETS = [
     "guestCardAllowed": false,
     "tag": "게스트카드 5% 불가",
     "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw953ebfd8/images/large/92ea012019465b75a1d7f1d43a1a5ca6.png",
-    "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/vendome-louis-cartier-wedding-band-pave-CRB4052900.html",
-    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/rings/%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%89%E3%83%BC%E3%83%A0-%E3%83%AB%E3%82%A4-%E3%82%AB%E3%83%AB%E3%83%86%E3%82%A3%E3%82%A8-%E3%82%A6%E3%82%A7%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%83%AA%E3%83%B3%E3%82%B0%E3%80%81%E5%B9%853.5mm%E3%80%81%E3%83%91%E3%83%B4%E3%82%A7%E3%82%BB%E3%83%83%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0-CRB4052900.html"
+    "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/",
+    "jpUrl": "https://www.cartier.com/ja-jp/jewellery/rings/"
   },
   {
     "id": "tiffany-milgrain-4mm",
@@ -94,8 +94,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-classic-milgrain-wedding-band-ring-12002161_989758_ED_M.jpg",
-    "krUrl": "https://www.tiffany.kr/engagement/mens-wedding-bands/tiffany-classic-milgrain-wedding-band-ring-GRP00096/",
-    "jpUrl": "https://www.tiffany.co.jp/engagement/mens-wedding-bands/tiffany-classic-milgrain-wedding-band-ring-GRP00096/"
+    "krUrl": "https://www.tiffany.kr/engagement/wedding-bands/",
+    "jpUrl": "https://www.tiffany.co.jp/engagement/wedding-bands/"
   },
   {
     "id": "tiffany-together-1d-4mm",
@@ -107,8 +107,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-together-milgrain-band-ring-69683935_1033282_ED.jpg",
-    "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-together-milgrain-band-ring-69683935/",
-    "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-together-milgrain-band-ring-69683935/"
+    "krUrl": "https://www.tiffany.kr/engagement/wedding-bands/",
+    "jpUrl": "https://www.tiffany.co.jp/engagement/wedding-bands/"
   },
   {
     "id": "tiffany-harmony-pt-3mm",
@@ -120,8 +120,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-harmony-wedding-band-ring-31298418_989758_ED_M.jpg",
-    "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/",
-    "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/"
+    "krUrl": "https://www.tiffany.kr/engagement/wedding-bands/",
+    "jpUrl": "https://www.tiffany.co.jp/engagement/wedding-bands/"
   },
   {
     "id": "tiffany-harmony-rg-3mm",
@@ -133,8 +133,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-harmony-wedding-band-ring-31298418_989758_ED_M.jpg",
-    "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/",
-    "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/"
+    "krUrl": "https://www.tiffany.kr/engagement/wedding-bands/",
+    "jpUrl": "https://www.tiffany.co.jp/engagement/wedding-bands/"
   },
   {
     "id": "tiffany-harmony-dia",
@@ -146,8 +146,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-harmony-band-ring-31298450_989758_ED_M.jpg",
-    "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-harmony-band-ring-GRP06832/",
-    "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-band-ring-GRP06832/"
+    "krUrl": "https://www.tiffany.kr/engagement/wedding-bands/",
+    "jpUrl": "https://www.tiffany.co.jp/engagement/wedding-bands/"
   },
   {
     "id": "tiffany-t-narrow-rg",
@@ -159,8 +159,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-t-narrow-ring-33823304_996162_ED.jpg",
-    "krUrl": "https://www.tiffany.kr/jewelry/rings/tiffany-t-narrow-ring-GRP07832/",
-    "jpUrl": "https://www.tiffany.co.jp/jewelry/rings/tiffany-t-narrow-ring-GRP07832/"
+    "krUrl": "https://www.tiffany.kr/jewelry/rings/",
+    "jpUrl": "https://www.tiffany.co.jp/jewelry/rings/"
   },
   {
     "id": "tiffany-band-3dia",
@@ -172,8 +172,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-classic-wedding-band-ring-63064947_989758_ED_M.jpg",
-    "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-band-ring-with-diamonds-GRP00095/",
-    "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-band-ring-with-diamonds-GRP00095/"
+    "krUrl": "https://www.tiffany.kr/engagement/wedding-bands/",
+    "jpUrl": "https://www.tiffany.co.jp/engagement/wedding-bands/"
   },
   {
     "id": "chaumet-torsade-pg",
@@ -185,8 +185,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082725_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082725",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082725"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-torsade-pt",
@@ -198,8 +198,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082723_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082723",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082723"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-torsade-1d",
@@ -211,8 +211,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082724_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082724",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082724"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-torsade-pave",
@@ -224,8 +224,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082727_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082727",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082727"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-liens",
@@ -237,8 +237,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082218_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/liens-evidence-wedding-band-082218",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/liens-evidence-wedding-band-082218"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-liens-dia",
@@ -250,8 +250,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082219_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/liens-evidence-wedding-band-082219",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/liens-evidence-wedding-band-082219"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-triomphe-sm",
@@ -263,8 +263,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/085202_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085202",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085202"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-triomphe-md",
@@ -276,8 +276,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/085204_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085204",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085204"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-triomphe-pave",
@@ -289,8 +289,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/085203_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085203",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085203"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-bee",
@@ -302,8 +302,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/083434_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/bee-my-love-ring-083434",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/bee-my-love-ring-083434"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "chaumet-bee-1d",
@@ -315,8 +315,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/083435_1.png",
-    "krUrl": "https://www.chaumet.com/kor_ko/bridal/wedding-bands/bee-my-love-ring-083435",
-    "jpUrl": "https://www.chaumet.com/jpn_ja/bridal/wedding-bands/bee-my-love-ring-083435"
+    "krUrl": "https://www.chaumet.com/kr",
+    "jpUrl": "https://www.chaumet.com/jp"
   },
   {
     "id": "bvlgari-bzero1-plain",
@@ -328,8 +328,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1319269.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/b-zero1-ring-yellow-gold-335978",
-    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/b-zero1-ring-yellow-gold-335978"
+    "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/b-zero1",
+    "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/b-zero1"
   },
   {
     "id": "bvlgari-bzero1-pave",
@@ -341,8 +341,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1321458.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/b-zero1/b-zero1-ring-white-gold-329342",
-    "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/b-zero1/b-zero1-ring-white-gold-329342"
+    "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/b-zero1",
+    "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/b-zero1"
   },
   {
     "id": "bvlgari-serpenti-plain",
@@ -354,8 +354,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1337147.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti/serpenti-viper-ring-rose-gold-354911",
-    "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-rose-gold-354911"
+    "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti",
+    "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti"
   },
   {
     "id": "bvlgari-serpenti-dia",
@@ -367,8 +367,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1338520.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti/serpenti-viper-ring-diamonds-353265",
-    "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-diamonds-353265"
+    "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti",
+    "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti"
   },
   {
     "id": "bvlgari-infinito-plain",
@@ -380,8 +380,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1336125.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-platinum-351978",
-    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-platinum-351978"
+    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/",
+    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/"
   },
   {
     "id": "bvlgari-infinito-1d",
@@ -393,8 +393,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1336128.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-1-diamond-351980",
-    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-1-diamond-351980"
+    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/",
+    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/"
   },
   {
     "id": "bvlgari-infinito-pave",
@@ -406,8 +406,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1336131.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-pave-351982",
-    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-pave-351982"
+    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/",
+    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/"
   },
   {
     "id": "bvlgari-bb-1d",
@@ -419,8 +419,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1325140.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/bulgari-bulgari/bulgari-bulgari-ring-rose-gold-341824",
-    "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/bulgari-bulgari/bulgari-bulgari-ring-rose-gold-341824"
+    "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/bulgari-bulgari",
+    "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/bulgari-bulgari"
   },
   {
     "id": "bvlgari-marryme-1d",
@@ -432,8 +432,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1318524.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/marryme-wedding-band-1-diamond-335759",
-    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-1-diamond-335759"
+    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/",
+    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/"
   },
   {
     "id": "bvlgari-marryme-5d",
@@ -445,8 +445,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1318526.png",
-    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/marryme-wedding-band-5-diamonds-335758",
-    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-5-diamonds-335758"
+    "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/",
+    "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/"
   },
   {
     "id": "chanel-coco-sm",
@@ -458,8 +458,8 @@ let PRESETS = [
     "guestCardAllowed": false,
     "tag": "게스트카드 5% 불가",
     "imageUrl": "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-gold-18k-beige-gold-packshot-portee-1-j10817-73266669.jpg",
-    "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/coco-crush-ring-j10817",
-    "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-j10817"
+    "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/",
+    "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/"
   },
   {
     "id": "chanel-coco-sm-dia",
@@ -471,8 +471,8 @@ let PRESETS = [
     "guestCardAllowed": false,
     "tag": "게스트카드 5% 불가",
     "imageUrl": "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-gold-18k-diamonds-packshot-portee-1-j11970-73266669.jpg",
-    "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/coco-crush-ring-diamonds-j11970",
-    "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-diamonds-j11970"
+    "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/",
+    "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/"
   },
   {
     "id": "chanel-coco-mini",
@@ -484,8 +484,8 @@ let PRESETS = [
     "guestCardAllowed": false,
     "tag": "게스트카드 5% 불가",
     "imageUrl": "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-beige-gold-packshot-portee-1-j11785-73266669.jpg",
-    "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/coco-crush-ring-j11785",
-    "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-j11785"
+    "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/",
+    "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/"
   },
   {
     "id": "boucheron-quatre-jrg00290",
@@ -497,8 +497,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/r/jrg00290_1.png",
-    "krUrl": "https://www.boucheron.com/ko-kr/quatre-classique-small-ring-jrg00290.html",
-    "jpUrl": "https://www.boucheron.com/ja-jp/quatre-classique-small-ring-jrg00290.html"
+    "krUrl": "https://www.boucheron.com/ko-kr/",
+    "jpUrl": "https://www.boucheron.com/ja-jp/"
   },
   {
     "id": "boucheron-quatre-jal00280",
@@ -510,8 +510,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00280_1.png",
-    "krUrl": "https://www.boucheron.com/ko-kr/quatre-radiant-edition-wedding-band-jal00280.html",
-    "jpUrl": "https://www.boucheron.com/ja-jp/quatre-radiant-edition-wedding-band-jal00280.html"
+    "krUrl": "https://www.boucheron.com/ko-kr/",
+    "jpUrl": "https://www.boucheron.com/ja-jp/"
   },
   {
     "id": "boucheron-quatre-jal00300",
@@ -523,8 +523,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00300_1.png",
-    "krUrl": "https://www.boucheron.com/ko-kr/quatre-double-white-edition-wedding-band-jal00300.html",
-    "jpUrl": "https://www.boucheron.com/ja-jp/quatre-double-white-edition-wedding-band-jal00300.html"
+    "krUrl": "https://www.boucheron.com/ko-kr/",
+    "jpUrl": "https://www.boucheron.com/ja-jp/"
   },
   {
     "id": "boucheron-facette",
@@ -536,8 +536,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00014_1.png",
-    "krUrl": "https://www.boucheron.com/ko-kr/facette-wedding-band-platinum-jal00014.html",
-    "jpUrl": "https://www.boucheron.com/ja-jp/facette-wedding-band-platinum-jal00014.html"
+    "krUrl": "https://www.boucheron.com/ko-kr/",
+    "jpUrl": "https://www.boucheron.com/ja-jp/"
   },
   {
     "id": "tasaki-trapezio-plain",
@@ -549,8 +549,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.tasaki.co.jp/medias/sys_master/images/images/h67/hd7/8834789507102/RD-F2643-18KSG_01.jpg",
-    "krUrl": "https://www.tasaki-global.com/bridal/marriage/trapezio/",
-    "jpUrl": "https://www.tasaki.co.jp/bridal/marriage/trapezio/"
+    "krUrl": "https://www.tasaki-global.com/bridal/",
+    "jpUrl": "https://www.tasaki.co.jp/bridal/"
   },
   {
     "id": "tasaki-trapezio-1d",
@@ -562,8 +562,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.tasaki.co.jp/medias/sys_master/images/images/h33/hba/8834789834782/RD-F2644-18KSG_01.jpg",
-    "krUrl": "https://www.tasaki-global.com/bridal/marriage/trapezio/",
-    "jpUrl": "https://www.tasaki.co.jp/bridal/marriage/trapezio/"
+    "krUrl": "https://www.tasaki-global.com/bridal/",
+    "jpUrl": "https://www.tasaki.co.jp/bridal/"
   },
   {
     "id": "tasaki-piano-plain",
@@ -575,8 +575,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.tasaki.co.jp/medias/sys_master/images/images/h90/he9/8834788524062/RD-F2284-18KSG_01.jpg",
-    "krUrl": "https://www.tasaki-global.com/bridal/marriage/piano/",
-    "jpUrl": "https://www.tasaki.co.jp/products/rk-4715-18kyg/"
+    "krUrl": "https://www.tasaki-global.com/bridal/",
+    "jpUrl": "https://www.tasaki.co.jp/bridal/"
   },
   {
     "id": "tasaki-piano-dia",
@@ -588,8 +588,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "백화점 5% 가능",
     "imageUrl": "https://www.tasaki.co.jp/medias/sys_master/images/images/h29/h1d/8834788851742/RD-F2285-18KSG_01.jpg",
-    "krUrl": "https://www.tasaki-global.com/bridal/marriage/piano/",
-    "jpUrl": "https://www.tasaki.co.jp/products/rd-f2696-18ksg/"
+    "krUrl": "https://www.tasaki-global.com/bridal/",
+    "jpUrl": "https://www.tasaki.co.jp/bridal/"
   },
   {
     "id": "graff-laurence-plain",
@@ -601,8 +601,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg",
-    "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/laurence-graff-signature/",
-    "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/laurence-graff-signature/"
+    "krUrl": "https://www.graff.com/kr-ko/",
+    "jpUrl": "https://www.graff.com/jp-ja/"
   },
   {
     "id": "graff-laurence-semi",
@@ -614,8 +614,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dw83a218f4/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR780_GR83383_Hero_1.jpg",
-    "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/laurence-graff-signature/",
-    "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/laurence-graff-signature/"
+    "krUrl": "https://www.graff.com/kr-ko/",
+    "jpUrl": "https://www.graff.com/jp-ja/"
   },
   {
     "id": "graff-laurence-pave",
@@ -627,8 +627,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dw10d297a7/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR779_GR83382_Hero_1.jpg",
-    "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/laurence-graff-signature/",
-    "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/laurence-graff-signature/"
+    "krUrl": "https://www.graff.com/kr-ko/",
+    "jpUrl": "https://www.graff.com/jp-ja/"
   },
   {
     "id": "graff-spiral-plain",
@@ -640,8 +640,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg",
-    "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/spiral/",
-    "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/spiral/"
+    "krUrl": "https://www.graff.com/kr-ko/",
+    "jpUrl": "https://www.graff.com/jp-ja/"
   },
   {
     "id": "graff-spiral-pave",
@@ -653,8 +653,8 @@ let PRESETS = [
     "guestCardAllowed": true,
     "tag": "지점별 5% 가능",
     "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dw10d297a7/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR779_GR83382_Hero_1.jpg",
-    "krUrl": "https://www.graff.com/kr-ko/jewellery-collections/spiral/",
-    "jpUrl": "https://www.graff.com/jp-ja/jewellery-collections/spiral/"
+    "krUrl": "https://www.graff.com/kr-ko/",
+    "jpUrl": "https://www.graff.com/jp-ja/"
   }
 ];
 
