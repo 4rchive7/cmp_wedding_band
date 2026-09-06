@@ -409,6 +409,64 @@ body.light-theme .preset-img-box {
   background: rgba(52, 211, 153, 0.15);
 }
 
+.preset-footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.preset-link-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.preset-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--text-primary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.preset-icon-link:hover {
+  background: var(--gold-glow);
+  border-color: var(--gold-primary);
+  color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.card-header-store-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--gold-light);
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.card-header-store-link:hover {
+  background: var(--gold-primary);
+  color: #0F172A;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.35);
+  transform: translateY(-1px);
+}
+
 /* ===================================================================
    Main Calculator Grid (Japan vs Korea)
    =================================================================== */
