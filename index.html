@@ -33,6 +33,11 @@
             <span class="mode-icon">👥</span> 2인 커플 (웨딩페어)
           </button>
         </div>
+        <button type="button" class="quick-summary-btn" id="openQuickSummaryBtn" title="전체 웨딩밴드 빠른 요약표 (Ctrl+S)">
+          <span class="btn-icon">⚡</span>
+          <span>전체 요약표</span>
+          <kbd class="kbd-badge">Ctrl+S</kbd>
+        </button>
         <button type="button" class="crawl-log-btn" id="openCrawlLogBtn" title="공식몰 크롤링 검증 로그">
           <span class="log-pulse"></span>
           <span>크롤링 로그</span>
@@ -46,8 +51,8 @@
     <!-- Popular Presets Section -->
     <section class="preset-section">
       <div class="section-title-wrap">
-        <span class="section-tag">TARGET 7 BRANDS</span>
-        <h2 class="section-title">7대 럭셔리 웨딩밴드 원클릭 프리셋</h2>
+        <span class="section-tag">TARGET 8 BRANDS</span>
+        <h2 class="section-title">8대 럭셔리 웨딩밴드 원클릭 프리셋</h2>
         <span class="preset-hint">* 최근 기준 정가 데이터 (클릭 시 자동 입력)</span>
       </div>
 
@@ -58,9 +63,10 @@
         <button type="button" class="brand-tab" data-brand="Tiffany & Co.">티파니</button>
         <button type="button" class="brand-tab" data-brand="Chanel">샤넬</button>
         <button type="button" class="brand-tab" data-brand="Bvlgari">불가리</button>
-        <button type="button" class="brand-tab" data-brand="Graff">그라프</button>
+        <button type="button" class="brand-tab" data-brand="Tasaki">타사키</button>
         <button type="button" class="brand-tab" data-brand="Boucheron">부쉐론</button>
         <button type="button" class="brand-tab" data-brand="Chaumet">쇼메</button>
+        <button type="button" class="brand-tab" data-brand="Graff">그라프</button>
       </div>
 
       <div class="preset-scroll-container">
@@ -428,6 +434,78 @@
         <span>관세청 여행자 휴대품 통관 기준 ($800 면세 / 자진신고 30% 감면) 적용</span>
       </div>
     </footer>
+  </div>
+
+  <!-- Quick Summary Modal (Ctrl + S) -->
+  <div class="modal-overlay" id="quickSummaryModal">
+    <div class="modal-card quick-summary-modal-card">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <div class="modal-tag-row">
+            <span class="modal-tag gold">QUICK PRICE INDEX</span>
+            <span class="shortcut-pill">단축키 <kbd>Ctrl</kbd> + <kbd>S</kbd></span>
+          </div>
+          <h3 class="modal-title">⚡ 8대 럭셔리 웨딩밴드 전체 빠른 요약표</h3>
+          <p class="modal-subtitle">50개 전체 웨딩밴드의 한·일 실구매가와 절약 차액을 한눈에 비교하고 바로 선택할 수 있습니다.</p>
+        </div>
+        <button type="button" class="modal-close-btn" id="closeQuickSummaryBtn" aria-label="닫기">✕</button>
+      </div>
+
+      <!-- Quick Search & Brand Filter Controls -->
+      <div class="quick-controls-bar">
+        <div class="quick-search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="quickSearchInput" class="quick-search-input" placeholder="모델명, 브랜드, 다이아, 4mm 등 빠른 검색...">
+          <button type="button" id="clearQuickSearchBtn" class="search-clear-btn" style="display:none;">✕</button>
+        </div>
+        <div class="quick-sort-box">
+          <span class="sort-label">정렬:</span>
+          <select id="quickSortSelect" class="quick-sort-select">
+            <option value="diffDesc" selected>💰 절약액 높은 순 (일본 유리)</option>
+            <option value="diffAsc">🇰🇷 한국 구매 유리 순</option>
+            <option value="jpPriceAsc">🇯🇵 일본 정가 낮은 순</option>
+            <option value="krPriceAsc">🇰🇷 한국 정가 낮은 순</option>
+            <option value="brand">🏷️ 브랜드별 순서</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Brand Pills -->
+      <div class="quick-brand-pills" id="quickBrandPills">
+        <button type="button" class="quick-pill active" data-brand="all">전체 (50)</button>
+        <button type="button" class="quick-pill" data-brand="Cartier">까르띠에</button>
+        <button type="button" class="quick-pill" data-brand="Tiffany & Co.">티파니</button>
+        <button type="button" class="quick-pill" data-brand="Chanel">샤넬</button>
+        <button type="button" class="quick-pill" data-brand="Bvlgari">불가리</button>
+        <button type="button" class="quick-pill" data-brand="Tasaki">타사키</button>
+        <button type="button" class="quick-pill" data-brand="Boucheron">부쉐론</button>
+        <button type="button" class="quick-pill" data-brand="Chaumet">쇼메</button>
+        <button type="button" class="quick-pill" data-brand="Graff">그라프</button>
+      </div>
+
+      <!-- Quick Table / Items List -->
+      <div class="quick-table-container">
+        <table class="quick-summary-table">
+          <thead>
+            <tr>
+              <th class="th-model">모델 / 브랜드</th>
+              <th class="th-kr">🇰🇷 한국 실구매가</th>
+              <th class="th-jp">🇯🇵 일본 실구매가</th>
+              <th class="th-verdict">💰 절약 금액 (차액)</th>
+              <th class="th-action">선택</th>
+            </tr>
+          </thead>
+          <tbody id="quickSummaryTableBody">
+            <!-- Dynamic JS injected rows -->
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="quick-modal-footer">
+        <span class="quick-footer-hint">* 현재 설정된 환율 및 관세/할인율 옵션이 실시간 적용된 계산 결과입니다. 클릭 시 계산기에 즉시 반영됩니다.</span>
+        <button type="button" class="quick-close-action-btn" id="footerCloseQuickSummaryBtn">닫기 (Esc)</button>
+      </div>
+    </div>
   </div>
 
   <!-- Crawl Log Modal -->

@@ -1,205 +1,660 @@
 /**
  * WEDDING BAND PRICE INDEX - CORE APPLICATION
- * Target 7 Luxury Brands: Cartier, Tiffany & Co., Chanel, Bvlgari, Graff, Boucheron, Chaumet
+ * Target 8 Luxury Brands: Cartier, Tiffany & Co., Chanel, Bvlgari, Tasaki, Boucheron, Chaumet, Graff
  * Includes Live Crawl Log Viewer
  */
 
-// --- Default 7 Luxury Brands Presets ---
+// --- Default 8 Luxury Brands Presets ---
 let PRESETS = [
   {
-    id: 'cartier-love-sm',
-    brand: 'Cartier',
-    brandKr: '까르띠에',
-    name: '러브 웨딩 밴드 (SM)',
+    id: "cartier-love-sm",
+    brand: "Cartier",
+    brandKr: "까르띠에",
+    name: "러브 웨딩 밴드 (SM 3.6mm)",
     jpPrice: 193600,
     krPrice: 2050000,
     guestCardAllowed: false,
-    tag: '게스트카드 5% 불가',
-    imageUrl: 'https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwc27b40c7/images/large/5c4da398fe195e5fa36ea2b5d4ce0071.png',
-    krUrl: 'https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/love/love-%EB%A7%81-%EC%8A%A4%EB%AA%B0%28small%29-%EB%AA%A8%EB%8D%B8-CRB4085000.html',
-    jpUrl: 'https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/love/love-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%B9%E3%83%A2%E3%83%BC%E3%83%AB%E3%83%A2%E3%83%87%E3%83%AB-CRB4085000.html'
+    tag: "게스트카드 5% 불가",
+    imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwc27b40c7/images/large/5c4da398fe195e5fa36ea2b5d4ce0071.png",
+    krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/love/love-wedding-band-small-model-CRB4085000.html",
+    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/love/love-wedding-band-small-model-CRB4085000.html"
   },
   {
-    id: 'cartier-love-cl',
-    brand: 'Cartier',
-    brandKr: '까르띠에',
-    name: '러브 링 (클래식)',
+    id: "cartier-love-cl",
+    brand: "Cartier",
+    brandKr: "까르띠에",
+    name: "러브 링 (클래식 5.5mm 노다이아)",
     jpPrice: 284900,
     krPrice: 2980000,
     guestCardAllowed: false,
-    tag: '게스트카드 5% 불가',
-    imageUrl: 'https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw47516a74/images/large/509efad81d12569981abebf66c433720.png',
-    krUrl: 'https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/love/love-%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8B%9D-%EB%AA%A8%EB%8D%B8--CRB4084600.html',
-    jpUrl: 'https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/love/love-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%87%E3%83%AB-CRB4084600.html'
+    tag: "게스트카드 5% 불가",
+    imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw47516a74/images/large/509efad81d12569981abebf66c433720.png",
+    krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/love/love-ring-classic-model-CRB4084600.html",
+    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/love/love-ring-classic-model-CRB4084600.html"
   },
   {
-    id: 'cartier-trinity-cl',
-    brand: 'Cartier',
-    brandKr: '까르띠에',
-    name: '트리니티 링 (클래식)',
+    id: "cartier-love-1d",
+    brand: "Cartier",
+    brandKr: "까르띠에",
+    name: "러브 링 (클래식 1다이아 0.02ct)",
+    jpPrice: 357500,
+    krPrice: 3740000,
+    guestCardAllowed: false,
+    tag: "게스트카드 5% 불가",
+    imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1b4e2373/images/large/262529949d2c554b9f36f6426462feef.png",
+    krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/love/love-ring-1-diamond-CRB4032400.html",
+    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/love/love-ring-1-diamond-CRB4032400.html"
+  },
+  {
+    id: "cartier-trinity-cl",
+    brand: "Cartier",
+    brandKr: "까르띠에",
+    name: "트리니티 링 (클래식 3.53mm)",
     jpPrice: 249700,
     krPrice: 2620000,
     guestCardAllowed: false,
-    tag: '게스트카드 5% 불가',
-    imageUrl: 'https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwae3ae765/images/large/bdddbc7c263e54ea9f1f71501fb9eede.png',
-    krUrl: 'https://www.cartier.com/ko-kr/%EC%A3%BC%EC%96%BC%EB%A6%AC/%EB%A7%81/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0/%ED%8A%B8%EB%A6%AC%EB%8B%88%ED%8B%B0-%EB%A7%81-%ED%81%B4%EB%9E%98%EC%8B%9D-%EB%AA%A8%EB%8D%B8-CRB4234200.html',
-    jpUrl: 'https://www.cartier.com/ja-jp/%E3%82%B8%E3%83%A5%E3%82%A8%E3%83%AA%E3%83%BC/%E3%83%AA%E3%83%B3%E3%82%B0/%E3%83%88%E3%83%AA%E3%83%8B%E3%83%86%E3%82%A3/%E3%83%88%E3%83%AA%E3%83%8B%E3%83%86%E3%82%A3-%E3%83%AA%E3%83%B3%E3%82%B0-%E3%82%AF%E3%83%A9%E3%82%B7%E3%83%83%E3%82%AF%E3%83%A2%E3%83%87%E3%83%AB-CRB4234200.html'
+    tag: "게스트카드 5% 불가",
+    imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwae3ae765/images/large/bdddbc7c263e54ea9f1f71501fb9eede.png",
+    krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/trinity/trinity-ring-classic-model-CRB4234200.html",
+    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/trinity/trinity-ring-classic-model-CRB4234200.html"
   },
   {
-    id: 'tiffany-t-true',
-    brand: 'Tiffany & Co.',
-    brandKr: '티파니',
-    name: 'T 트루 내로우 링',
+    id: "cartier-vendome-35",
+    brand: "Cartier",
+    brandKr: "까르띠에",
+    name: "방돔 루이 까르띠에 링 (3.5mm)",
+    jpPrice: 224400,
+    krPrice: 2360000,
+    guestCardAllowed: false,
+    tag: "게스트카드 5% 불가",
+    imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1bc21509/images/large/13c8ff759ea45a0592ca07bfa7c5d0eb.png",
+    krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/vendome-louis-cartier-wedding-band-3-5mm-CRB4052200.html",
+    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/vendome-louis-cartier-wedding-band-3-5mm-CRB4052200.html"
+  },
+  {
+    id: "cartier-vendome-pave",
+    brand: "Cartier",
+    brandKr: "까르띠에",
+    name: "방돔 루이 까르띠에 링 (3.5mm 파베 세팅)",
+    jpPrice: 748000,
+    krPrice: 7750000,
+    guestCardAllowed: false,
+    tag: "게스트카드 5% 불가",
+    imageUrl: "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw953ebfd8/images/large/92ea012019465b75a1d7f1d43a1a5ca6.png",
+    krUrl: "https://www.cartier.com/ko-kr/jewelry/rings/vendome-louis-cartier-wedding-band-pave-CRB4052900.html",
+    jpUrl: "https://www.cartier.com/ja-jp/jewelry/rings/vendome-louis-cartier-wedding-band-pave-CRB4052900.html"
+  },
+  {
+    id: "tiffany-milgrain-4mm",
+    brand: "Tiffany & Co.",
+    brandKr: "티파니",
+    name: "티파니 클래식 밀그레인 링 (4mm)",
+    jpPrice: 280500,
+    krPrice: 2980000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-classic-milgrain-wedding-band-ring-12002161_989758_ED_M.jpg",
+    krUrl: "https://www.tiffany.kr/engagement/mens-wedding-bands/tiffany-classic-milgrain-wedding-band-ring-GRP00096/",
+    jpUrl: "https://www.tiffany.co.jp/engagement/mens-wedding-bands/tiffany-classic-milgrain-wedding-band-ring-GRP00096/"
+  },
+  {
+    id: "tiffany-together-1d-4mm",
+    brand: "Tiffany & Co.",
+    brandKr: "티파니",
+    name: "티파니 투게더 밴드 링 (4mm 1다이아)",
+    jpPrice: 385000,
+    krPrice: 4030000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-together-milgrain-band-ring-69683935_1033282_ED.jpg",
+    krUrl: "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-together-milgrain-band-ring-69683935/",
+    jpUrl: "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-together-milgrain-band-ring-69683935/"
+  },
+  {
+    id: "tiffany-harmony-pt-3mm",
+    brand: "Tiffany & Co.",
+    brandKr: "티파니",
+    name: "티파니 하모니 웨딩 밴드 (플래티늄 3mm)",
+    jpPrice: 176000,
+    krPrice: 1850000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-harmony-wedding-band-ring-31298418_989758_ED_M.jpg",
+    krUrl: "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/",
+    jpUrl: "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/"
+  },
+  {
+    id: "tiffany-harmony-rg-3mm",
+    brand: "Tiffany & Co.",
+    brandKr: "티파니",
+    name: "티파니 하모니 웨딩 밴드 (로즈골드 3mm)",
+    jpPrice: 151800,
+    krPrice: 1590000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-harmony-wedding-band-ring-31298418_989758_ED_M.jpg",
+    krUrl: "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/",
+    jpUrl: "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/"
+  },
+  {
+    id: "tiffany-harmony-dia",
+    brand: "Tiffany & Co.",
+    brandKr: "티파니",
+    name: "티파니 하모니 밴드 링 (다이아몬드 세팅)",
+    jpPrice: 385000,
+    krPrice: 3980000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-harmony-band-ring-31298450_989758_ED_M.jpg",
+    krUrl: "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-harmony-band-ring-GRP06832/",
+    jpUrl: "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-band-ring-GRP06832/"
+  },
+  {
+    id: "tiffany-t-narrow-rg",
+    brand: "Tiffany & Co.",
+    brandKr: "티파니",
+    name: "티파니 T 내로우 링 (18K 로즈골드)",
     jpPrice: 214500,
     krPrice: 2270000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능',
-    imageUrl: 'https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-ttrue-narrow-ring-63064947_989758_ED_M.jpg',
-    krUrl: 'https://www.tiffany.kr/jewelry/rings/',
-    jpUrl: 'https://www.tiffany.co.jp/jewelry/rings/'
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-t-narrow-ring-33823304_996162_ED.jpg",
+    krUrl: "https://www.tiffany.kr/jewelry/rings/tiffany-t-narrow-ring-GRP07832/",
+    jpUrl: "https://www.tiffany.co.jp/jewelry/rings/tiffany-t-narrow-ring-GRP07832/"
   },
   {
-    id: 'tiffany-band-ring',
-    brand: 'Tiffany & Co.',
-    brandKr: '티파니',
-    name: '티파니 밴드 링 (3P 다이아)',
+    id: "tiffany-band-3dia",
+    brand: "Tiffany & Co.",
+    brandKr: "티파니",
+    name: "티파니 T&CO 밴드 링 (3P 다이아몬드)",
     jpPrice: 269500,
     krPrice: 2850000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능',
-    imageUrl: 'https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-classic-wedding-band-ring-63064947_989758_ED_M.jpg',
-    krUrl: 'https://www.tiffany.kr/engagement/womens-wedding-bands/',
-    jpUrl: 'https://www.tiffany.co.jp/engagement/womens-wedding-bands/'
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-classic-wedding-band-ring-63064947_989758_ED_M.jpg",
+    krUrl: "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-band-ring-with-diamonds-GRP00095/",
+    jpUrl: "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-band-ring-with-diamonds-GRP00095/"
   },
   {
-    id: 'chanel-coco-sm',
-    brand: 'Chanel',
-    brandKr: '샤넬',
-    name: '코코 크러쉬 링 (스몰)',
-    jpPrice: 245300,
-    krPrice: 2590000,
-    guestCardAllowed: false,
-    tag: '게스트카드 5% 불가',
-    imageUrl: 'https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-beige-gold-packshot-portee-1-j11785-73266669.jpg',
-    krUrl: 'https://www.chanel.com/kr/fine-jewellery/coco-crush/',
-    jpUrl: 'https://www.chanel.com/jp/fine-jewellery/coco-crush/'
-  },
-  {
-    id: 'chanel-coco-md',
-    brand: 'Chanel',
-    brandKr: '샤넬',
-    name: '코코 크러쉬 링 (미디엄)',
-    jpPrice: 424600,
-    krPrice: 4480000,
-    guestCardAllowed: false,
-    tag: '게스트카드 5% 불가',
-    imageUrl: 'https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-gold-18k-beige-gold-packshot-portee-1-j10817-73266669.jpg',
-    krUrl: 'https://www.chanel.com/kr/fine-jewellery/coco-crush/',
-    jpUrl: 'https://www.chanel.com/jp/fine-jewellery/coco-crush/'
-  },
-  {
-    id: 'bvlgari-bzero1',
-    brand: 'Bvlgari',
-    brandKr: '불가리',
-    name: '비제로원 1밴드 링',
-    jpPrice: 267300,
-    krPrice: 2810000,
+    id: "chaumet-torsade-pg",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "토르사드 드 쇼메 (핑크골드 3.5mm)",
+    jpPrice: 251900,
+    krPrice: 2650000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능',
-    imageUrl: 'https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1319269.png',
-    krUrl: 'https://www.bulgari.com/ko-kr/bridal/wedding-bands',
-    jpUrl: 'https://www.bulgari.com/ja-jp/bridal/wedding-bands'
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/082725_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082725",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082725"
   },
   {
-    id: 'bvlgari-serpenti',
-    brand: 'Bvlgari',
-    brandKr: '불가리',
-    name: '세르펜티 바이퍼 링',
-    jpPrice: 302500,
-    krPrice: 3190000,
+    id: "chaumet-torsade-pt",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "토르사드 드 쇼메 (플래티넘 3.5mm)",
+    jpPrice: 293700,
+    krPrice: 3100000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능',
-    imageUrl: 'https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1337147.png',
-    krUrl: 'https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti',
-    jpUrl: 'https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti'
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/082723_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082723",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082723"
   },
   {
-    id: 'graff-laurence',
-    brand: 'Graff',
-    brandKr: '그라프',
-    name: '로렌스 그라프 시그니처 링',
-    jpPrice: 345000,
-    krPrice: 3650000,
+    id: "chaumet-torsade-1d",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "토르사드 드 쇼메 (플래티넘 1다이아)",
+    jpPrice: 336600,
+    krPrice: 3550000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능',
-    imageUrl: 'https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg',
-    krUrl: 'https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/',
-    jpUrl: 'https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/'
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/082724_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082724",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082724"
   },
   {
-    id: 'graff-spiral',
-    brand: 'Graff',
-    brandKr: '그라프',
-    name: '스파이럴 밴드 링',
-    jpPrice: 315000,
-    krPrice: 3300000,
+    id: "chaumet-torsade-pave",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "토르사드 드 쇼메 (플래티넘 풀 파베)",
+    jpPrice: 704000,
+    krPrice: 7420000,
     guestCardAllowed: true,
-    tag: '지점별 5% 가능',
-    imageUrl: 'https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg',
-    krUrl: 'https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/',
-    jpUrl: 'https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/'
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/082727_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082727",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082727"
   },
   {
-    id: 'boucheron-quatre',
-    brand: 'Boucheron',
-    brandKr: '부쉐론',
-    name: '콰트로 클래식 스몰 링',
-    jpPrice: 627000,
-    krPrice: 6650000,
-    guestCardAllowed: true,
-    tag: '지점별 5% 가능',
-    imageUrl: 'https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/r/jrg00200_1.png',
-    krUrl: 'https://www.boucheron.com/ko-kr/bridal/wedding-bands',
-    jpUrl: 'https://www.boucheron.com/ja-jp/bridal/wedding-bands'
-  },
-  {
-    id: 'boucheron-facette',
-    brand: 'Boucheron',
-    brandKr: '부쉐론',
-    name: '파셋 웨딩 밴드 (플래티넘)',
-    jpPrice: 279400,
-    krPrice: 2940000,
-    guestCardAllowed: true,
-    tag: '지점별 5% 가능',
-    imageUrl: 'https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00014_1.png',
-    krUrl: 'https://www.boucheron.com/ko-kr/bridal/wedding-bands',
-    jpUrl: 'https://www.boucheron.com/ja-jp/bridal/wedding-bands'
-  },
-  {
-    id: 'chaumet-bee',
-    brand: 'Chaumet',
-    brandKr: '쇼메',
-    name: '비 마이 러브 링',
-    jpPrice: 163900,
-    krPrice: 1740000,
-    guestCardAllowed: true,
-    tag: '백화점 5% 가능',
-    imageUrl: 'https://www.chaumet.com/media/catalog/product/0/8/083434_1.png',
-    krUrl: 'https://www.chaumet.com/kr/bridal/wedding-bands',
-    jpUrl: 'https://www.chaumet.com/jp/bridal/wedding-bands'
-  },
-  {
-    id: 'chaumet-liens',
-    brand: 'Chaumet',
-    brandKr: '쇼메',
-    name: '리앙 에비당스 링',
+    id: "chaumet-liens",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "리앙 에비당스 링 (노다이아)",
     jpPrice: 272800,
     krPrice: 2880000,
     guestCardAllowed: true,
-    tag: '백화점 5% 가능',
-    imageUrl: 'https://www.chaumet.com/media/catalog/product/0/8/082218_1.png',
-    krUrl: 'https://www.chaumet.com/kr/bridal/wedding-bands',
-    jpUrl: 'https://www.chaumet.com/jp/bridal/wedding-bands'
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/082218_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/liens-evidence-wedding-band-082218",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/liens-evidence-wedding-band-082218"
+  },
+  {
+    id: "chaumet-liens-dia",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "리앙 에비당스 링 (중간 다이아몬드)",
+    jpPrice: 354200,
+    krPrice: 3740000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/082219_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/liens-evidence-wedding-band-082219",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/liens-evidence-wedding-band-082219"
+  },
+  {
+    id: "chaumet-triomphe-sm",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "트리옹프 드 쇼메 (여성용 내로우 노다이아)",
+    jpPrice: 212300,
+    krPrice: 2240000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/085202_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085202",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085202"
+  },
+  {
+    id: "chaumet-triomphe-md",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "트리옹프 드 쇼메 (남성용 클래식 노다이아)",
+    jpPrice: 272800,
+    krPrice: 2880000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/085204_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085204",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085204"
+  },
+  {
+    id: "chaumet-triomphe-pave",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "트리옹프 드 쇼메 (풀 파베 다이아)",
+    jpPrice: 567600,
+    krPrice: 5980000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/085203_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085203",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085203"
+  },
+  {
+    id: "chaumet-bee",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "비 마이 러브 링 (노다이아)",
+    jpPrice: 163900,
+    krPrice: 1740000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/083434_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/bee-my-love-ring-083434",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/bee-my-love-ring-083434"
+  },
+  {
+    id: "chaumet-bee-1d",
+    brand: "Chaumet",
+    brandKr: "쇼메",
+    name: "비 마이 러브 링 (1다이아)",
+    jpPrice: 215600,
+    krPrice: 2280000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.chaumet.com/media/catalog/product/0/8/083435_1.png",
+    krUrl: "https://www.chaumet.com/kr/bridal/wedding-bands/bee-my-love-ring-083435",
+    jpUrl: "https://www.chaumet.com/jp/bridal/wedding-bands/bee-my-love-ring-083435"
+  },
+  {
+    id: "bvlgari-bzero1-plain",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "비제로원 1밴드 링 (노다이아)",
+    jpPrice: 267300,
+    krPrice: 2810000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1319269.png",
+    krUrl: "https://www.bulgari.com/ko-kr/bridal/wedding-bands/b-zero1-ring-yellow-gold-335978",
+    jpUrl: "https://www.bulgari.com/ja-jp/bridal/wedding-bands/b-zero1-ring-yellow-gold-335978"
+  },
+  {
+    id: "bvlgari-bzero1-pave",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "비제로원 1밴드 링 (파베 다이아)",
+    jpPrice: 693000,
+    krPrice: 7300000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1321458.png",
+    krUrl: "https://www.bulgari.com/ko-kr/jewelry/by-collection/b-zero1/b-zero1-ring-white-gold-329342",
+    jpUrl: "https://www.bulgari.com/ja-jp/jewelry/by-collection/b-zero1/b-zero1-ring-white-gold-329342"
+  },
+  {
+    id: "bvlgari-serpenti-plain",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "세르펜티 바이퍼 링 (노다이아)",
+    jpPrice: 302500,
+    krPrice: 3190000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1337147.png",
+    krUrl: "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti/serpenti-viper-ring-rose-gold-354911",
+    jpUrl: "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-rose-gold-354911"
+  },
+  {
+    id: "bvlgari-serpenti-dia",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "세르펜티 바이퍼 링 (세미파베 다이아)",
+    jpPrice: 539000,
+    krPrice: 5650000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1338520.png",
+    krUrl: "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti/serpenti-viper-ring-diamonds-353265",
+    jpUrl: "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-diamonds-353265"
+  },
+  {
+    id: "bvlgari-infinito-plain",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "인피니토 웨딩 밴드 (노다이아 플래티넘)",
+    jpPrice: 254100,
+    krPrice: 2680000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1336125.png",
+    krUrl: "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-platinum-351978",
+    jpUrl: "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-platinum-351978"
+  },
+  {
+    id: "bvlgari-infinito-1d",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "인피니토 웨딩 밴드 (1다이아 플래티넘)",
+    jpPrice: 295900,
+    krPrice: 3120000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1336128.png",
+    krUrl: "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-1-diamond-351980",
+    jpUrl: "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-1-diamond-351980"
+  },
+  {
+    id: "bvlgari-infinito-pave",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "인피니토 웨딩 밴드 (풀 파베 플래티넘)",
+    jpPrice: 649000,
+    krPrice: 6850000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1336131.png",
+    krUrl: "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-pave-351982",
+    jpUrl: "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-pave-351982"
+  },
+  {
+    id: "bvlgari-bb-1d",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "불가리 불가리 링 (1다이아 18K 로즈골드)",
+    jpPrice: 282700,
+    krPrice: 2980000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1325140.png",
+    krUrl: "https://www.bulgari.com/ko-kr/jewelry/by-collection/bulgari-bulgari/bulgari-bulgari-ring-rose-gold-341824",
+    jpUrl: "https://www.bulgari.com/ja-jp/jewelry/by-collection/bulgari-bulgari/bulgari-bulgari-ring-rose-gold-341824"
+  },
+  {
+    id: "bvlgari-marryme-1d",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "메리미 웨딩 밴드 (플래티넘 1다이아)",
+    jpPrice: 260700,
+    krPrice: 2750000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1318524.png",
+    krUrl: "https://www.bulgari.com/ko-kr/bridal/wedding-bands/marryme-wedding-band-1-diamond-335759",
+    jpUrl: "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-1-diamond-335759"
+  },
+  {
+    id: "bvlgari-marryme-5d",
+    brand: "Bvlgari",
+    brandKr: "불가리",
+    name: "메리미 웨딩 밴드 (플래티넘 5다이아)",
+    jpPrice: 365200,
+    krPrice: 3850000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1318526.png",
+    krUrl: "https://www.bulgari.com/ko-kr/bridal/wedding-bands/marryme-wedding-band-5-diamonds-335758",
+    jpUrl: "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-5-diamonds-335758"
+  },
+  {
+    id: "chanel-coco-sm",
+    brand: "Chanel",
+    brandKr: "샤넬",
+    name: "코코 크러쉬 링 (스몰 노다이아)",
+    jpPrice: 424600,
+    krPrice: 4480000,
+    guestCardAllowed: false,
+    tag: "게스트카드 5% 불가",
+    imageUrl: "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-gold-18k-beige-gold-packshot-portee-1-j10817-73266669.jpg",
+    krUrl: "https://www.chanel.com/kr/fine-jewellery/coco-crush/coco-crush-ring-j10817",
+    jpUrl: "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-j10817"
+  },
+  {
+    id: "chanel-coco-sm-dia",
+    brand: "Chanel",
+    brandKr: "샤넬",
+    name: "코코 크러쉬 링 (스몰 다이아몬드)",
+    jpPrice: 535000,
+    krPrice: 5650000,
+    guestCardAllowed: false,
+    tag: "게스트카드 5% 불가",
+    imageUrl: "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-gold-18k-diamonds-packshot-portee-1-j11970-73266669.jpg",
+    krUrl: "https://www.chanel.com/kr/fine-jewellery/coco-crush/coco-crush-ring-diamonds-j11970",
+    jpUrl: "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-diamonds-j11970"
+  },
+  {
+    id: "chanel-coco-mini",
+    brand: "Chanel",
+    brandKr: "샤넬",
+    name: "코코 크러쉬 링 (미니 노다이아)",
+    jpPrice: 245300,
+    krPrice: 2590000,
+    guestCardAllowed: false,
+    tag: "게스트카드 5% 불가",
+    imageUrl: "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-beige-gold-packshot-portee-1-j11785-73266669.jpg",
+    krUrl: "https://www.chanel.com/kr/fine-jewellery/coco-crush/coco-crush-ring-j11785",
+    jpUrl: "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-j11785"
+  },
+  {
+    id: "boucheron-quatre-jrg00290",
+    brand: "Boucheron",
+    brandKr: "부쉐론",
+    name: "콰트로 클래식 스몰 링 (JRG00290)",
+    jpPrice: 819500,
+    krPrice: 7410000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/r/jrg00290_1.png",
+    krUrl: "https://www.boucheron.com/ko-kr/quatre-classique-small-ring-jrg00290.html",
+    jpUrl: "https://www.boucheron.com/ja-jp/quatre-classique-small-ring-jrg00290.html"
+  },
+  {
+    id: "boucheron-quatre-jal00280",
+    brand: "Boucheron",
+    brandKr: "부쉐론",
+    name: "콰트로 레디언트 에디션 웨딩밴드 (JAL00280)",
+    jpPrice: 962500,
+    krPrice: 8800000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00280_1.png",
+    krUrl: "https://www.boucheron.com/ko-kr/quatre-radiant-edition-wedding-band-jal00280.html",
+    jpUrl: "https://www.boucheron.com/ja-jp/quatre-radiant-edition-wedding-band-jal00280.html"
+  },
+  {
+    id: "boucheron-quatre-jal00300",
+    brand: "Boucheron",
+    brandKr: "부쉐론",
+    name: "콰트로 더블 화이트 에디션 밴드 (JAL00300)",
+    jpPrice: 407000,
+    krPrice: 3910000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00300_1.png",
+    krUrl: "https://www.boucheron.com/ko-kr/quatre-double-white-edition-wedding-band-jal00300.html",
+    jpUrl: "https://www.boucheron.com/ja-jp/quatre-double-white-edition-wedding-band-jal00300.html"
+  },
+  {
+    id: "boucheron-facette",
+    brand: "Boucheron",
+    brandKr: "부쉐론",
+    name: "파셋 웨딩 밴드 (플래티넘)",
+    jpPrice: 279400,
+    krPrice: 2940000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00014_1.png",
+    krUrl: "https://www.boucheron.com/ko-kr/facette-wedding-band-platinum-jal00014.html",
+    jpUrl: "https://www.boucheron.com/ja-jp/facette-wedding-band-platinum-jal00014.html"
+  },
+  {
+    id: "tasaki-trapezio-plain",
+    brand: "Tasaki",
+    brandKr: "타사키",
+    name: "트라페지오 링 (노다이아)",
+    jpPrice: 203500,
+    krPrice: 2150000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.tasaki.co.jp/medias/sys_master/images/images/h67/hd7/8834789507102/RD-F2643-18KSG_01.jpg",
+    krUrl: "https://www.tasaki.co.kr/bridal/bridal_collection/trapezio/RD-F2643-18KSG/",
+    jpUrl: "https://www.tasaki.co.jp/bridal/bridal_collection/trapezio/RD-F2643-18KSG/"
+  },
+  {
+    id: "tasaki-trapezio-1d",
+    brand: "Tasaki",
+    brandKr: "타사키",
+    name: "트라페지오 링 (1다이아)",
+    jpPrice: 242000,
+    krPrice: 2550000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.tasaki.co.jp/medias/sys_master/images/images/h33/hba/8834789834782/RD-F2644-18KSG_01.jpg",
+    krUrl: "https://www.tasaki.co.kr/bridal/bridal_collection/trapezio/RD-F2644-18KSG/",
+    jpUrl: "https://www.tasaki.co.jp/bridal/bridal_collection/trapezio/RD-F2644-18KSG/"
+  },
+  {
+    id: "tasaki-piano-plain",
+    brand: "Tasaki",
+    brandKr: "타사키",
+    name: "피아노 링 20 (노다이아)",
+    jpPrice: 187000,
+    krPrice: 1980000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.tasaki.co.jp/medias/sys_master/images/images/h90/he9/8834788524062/RD-F2284-18KSG_01.jpg",
+    krUrl: "https://www.tasaki.co.kr/bridal/bridal_collection/piano/RD-F2284-18KSG/",
+    jpUrl: "https://www.tasaki.co.jp/bridal/bridal_collection/piano/RD-F2284-18KSG/"
+  },
+  {
+    id: "tasaki-piano-dia",
+    brand: "Tasaki",
+    brandKr: "타사키",
+    name: "피아노 링 (3다이아 세팅)",
+    jpPrice: 253000,
+    krPrice: 2680000,
+    guestCardAllowed: true,
+    tag: "백화점 5% 가능",
+    imageUrl: "https://www.tasaki.co.jp/medias/sys_master/images/images/h29/h1d/8834788851742/RD-F2285-18KSG_01.jpg",
+    krUrl: "https://www.tasaki.co.kr/bridal/bridal_collection/piano/RD-F2285-18KSG/",
+    jpUrl: "https://www.tasaki.co.jp/bridal/bridal_collection/piano/RD-F2285-18KSG/"
+  },
+  {
+    id: "graff-laurence-plain",
+    brand: "Graff",
+    brandKr: "그라프",
+    name: "로렌스 그라프 시그니처 밴드 (노다이아)",
+    jpPrice: 345000,
+    krPrice: 3650000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg",
+    krUrl: "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/laurence-graff-signature-band-RGR778/",
+    jpUrl: "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/laurence-graff-signature-band-RGR778/"
+  },
+  {
+    id: "graff-laurence-semi",
+    brand: "Graff",
+    brandKr: "그라프",
+    name: "로렌스 그라프 시그니처 밴드 (일부 다이아)",
+    jpPrice: 455000,
+    krPrice: 4340000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dw83a218f4/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR780_GR83383_Hero_1.jpg",
+    krUrl: "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/laurence-graff-signature-diamond-band-RGR780/",
+    jpUrl: "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/laurence-graff-signature-diamond-band-RGR780/"
+  },
+  {
+    id: "graff-laurence-pave",
+    brand: "Graff",
+    brandKr: "그라프",
+    name: "로렌스 그라프 시그니처 밴드 (풀 파베 다이아)",
+    jpPrice: 645000,
+    krPrice: 6300000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dw10d297a7/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR779_GR83382_Hero_1.jpg",
+    krUrl: "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/laurence-graff-signature-pave-diamond-band-RGR779/",
+    jpUrl: "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/laurence-graff-signature-pave-diamond-band-RGR779/"
+  },
+  {
+    id: "graff-spiral-plain",
+    brand: "Graff",
+    brandKr: "그라프",
+    name: "스파이럴 밴드 링 (노다이아)",
+    jpPrice: 315000,
+    krPrice: 3300000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg",
+    krUrl: "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/spiral-band-RGR481/",
+    jpUrl: "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/spiral-band-RGR481/"
+  },
+  {
+    id: "graff-spiral-pave",
+    brand: "Graff",
+    brandKr: "그라프",
+    name: "스파이럴 밴드 링 (파베 다이아)",
+    jpPrice: 1050000,
+    krPrice: 10210000,
+    guestCardAllowed: true,
+    tag: "지점별 5% 가능",
+    imageUrl: "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dw10d297a7/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR779_GR83382_Hero_1.jpg",
+    krUrl: "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/spiral-pave-diamond-band-RGR482/",
+    jpUrl: "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/spiral-pave-diamond-band-RGR482/"
   }
 ];
 
@@ -292,7 +747,18 @@ const dom = {
   logStatusBadge: document.getElementById('logStatusBadge'),
   logUpdatedCount: document.getElementById('logUpdatedCount'),
   logSearchInput: document.getElementById('logSearchInput'),
-  logItemsContainer: document.getElementById('logItemsContainer')
+  logItemsContainer: document.getElementById('logItemsContainer'),
+
+  // Quick Summary Modal (Ctrl + S)
+  openQuickSummaryBtn: document.getElementById('openQuickSummaryBtn'),
+  closeQuickSummaryBtn: document.getElementById('closeQuickSummaryBtn'),
+  footerCloseQuickSummaryBtn: document.getElementById('footerCloseQuickSummaryBtn'),
+  quickSummaryModal: document.getElementById('quickSummaryModal'),
+  quickSearchInput: document.getElementById('quickSearchInput'),
+  clearQuickSearchBtn: document.getElementById('clearQuickSearchBtn'),
+  quickSortSelect: document.getElementById('quickSortSelect'),
+  quickBrandPills: document.getElementById('quickBrandPills'),
+  quickSummaryTableBody: document.getElementById('quickSummaryTableBody')
 };
 
 // --- Formatting Helpers ---
@@ -326,7 +792,10 @@ async function loadExternalRingsData() {
       
       const hint = document.querySelector('.preset-hint');
       if (hint && data.lastUpdated) {
-        hint.textContent = `* 7대 브랜드 공식몰 기준 데이터 (최종 검증: ${data.lastUpdated})`;
+        hint.textContent = `* 8대 브랜드 공식몰 기준 데이터 (최종 검증: ${data.lastUpdated})`;
+      }
+      if (dom.quickSummaryModal && dom.quickSummaryModal.classList.contains('active')) {
+        renderQuickSummary();
       }
     }
   } catch (err) {
@@ -441,6 +910,230 @@ function renderCrawlLogModal(logData, filterQuery = '') {
   });
 }
 
+// --- Quick Summary Table (Ctrl + S) Logic ---
+let quickState = {
+  brandFilter: 'all',
+  searchQuery: '',
+  sortBy: 'diffDesc'
+};
+
+function calculateForPreset(preset) {
+  const multiplier = state.mode;
+  const rawJpPrice = preset.jpPrice;
+  const rawKrPrice = preset.krPrice;
+  
+  const baseJp = rawJpPrice * multiplier;
+  const baseKr = rawKrPrice * multiplier;
+  
+  const jpyKrwRate = parseFloat(dom.jpyKrwRate.value) || state.jpyKrwRate || 915.0;
+  const usdKrwRate = parseFloat(dom.usdKrwRate.value) || state.usdKrwRate || 1380.0;
+  const usdJpyRate = parseFloat(dom.usdJpyRate.value) || state.usdJpyRate || 150.8;
+  
+  // Japan Guest Card 5%
+  const guestDiscountRate = preset.guestCardAllowed ? 0.05 : 0;
+  const jpGuestDiscountJPY = Math.floor(baseJp * guestDiscountRate);
+  const jpAfterGuestJPY = baseJp - jpGuestDiscountJPY;
+  
+  // Tax Free refund (Dept 8.45% vs Boutique 10.0%)
+  let taxRefundRate = 0;
+  if (state.taxFreeType === 'dept') {
+    taxRefundRate = 0.084545;
+  } else if (state.taxFreeType === 'boutique') {
+    taxRefundRate = 0.10;
+  }
+  const jpPreTaxJPY = jpAfterGuestJPY / 1.10;
+  const jpTaxRefundJPY = Math.floor(jpPreTaxJPY * taxRefundRate);
+  const jpStoreNetJPY = jpAfterGuestJPY - jpTaxRefundJPY;
+  
+  // Payment card fee
+  const cardFeePercent = parseFloat(dom.jpCardFee.value) || 0;
+  const jpCardFeeJPY = Math.floor(jpStoreNetJPY * (cardFeePercent / 100));
+  const jpTotalSpentJPY = jpStoreNetJPY + jpCardFeeJPY;
+  const jpPaidKRW = Math.round(jpTotalSpentJPY * (jpyKrwRate / 100));
+  
+  // Korean Customs Tax
+  const purchaseUSD = jpStoreNetJPY / usdJpyRate;
+  const dutyFreeAllowanceUSD = 800 * multiplier;
+  const taxableUSD = Math.max(0, purchaseUSD - dutyFreeAllowanceUSD);
+  const taxableKRW = Math.round(taxableUSD * usdKrwRate);
+  
+  let customsDuty = 0;
+  let customsVAT = 0;
+  let customsReduction = 0;
+  let finalCustomsTax = 0;
+  
+  if (taxableKRW > 0) {
+    customsDuty = Math.floor(taxableKRW * 0.08);
+    customsVAT = Math.floor((taxableKRW + customsDuty) * 0.10);
+    const baseCustomsTax = customsDuty + customsVAT;
+    if (state.customsSelfDeclare) {
+      const maxReduction = 200000 * multiplier;
+      customsReduction = Math.min(Math.floor(baseCustomsTax * 0.30), maxReduction);
+    }
+    finalCustomsTax = Math.max(0, baseCustomsTax - customsReduction);
+  }
+  
+  const totalJapanKRW = jpPaidKRW + finalCustomsTax;
+  
+  // Korea store net
+  let giftDiscountRate = 0;
+  if (dom.krGiftDiscount.value === 'custom') {
+    giftDiscountRate = parseFloat(dom.krCustomGift.value) || 0;
+  } else {
+    giftDiscountRate = parseFloat(dom.krGiftDiscount.value) || 0;
+  }
+  const mileageRate = parseFloat(dom.krMileage.value) || 0;
+  const totalKrDiscountPercent = giftDiscountRate + mileageRate;
+  const krDiscountKRW = Math.round(baseKr * (totalKrDiscountPercent / 100));
+  const totalKoreaKRW = baseKr - krDiscountKRW;
+  
+  const diffKRW = totalKoreaKRW - totalJapanKRW;
+  const savePercent = totalKoreaKRW > 0 ? (Math.abs(diffKRW) / totalKoreaKRW) * 100 : 0;
+  
+  return {
+    totalJapanKRW,
+    totalKoreaKRW,
+    diffKRW,
+    savePercent
+  };
+}
+
+function openQuickSummaryModal() {
+  if (!dom.quickSummaryModal) return;
+  dom.quickSummaryModal.classList.add('active');
+  renderQuickSummary();
+  if (dom.quickSearchInput) {
+    dom.quickSearchInput.focus();
+  }
+}
+
+function closeQuickSummaryModal() {
+  if (!dom.quickSummaryModal) return;
+  dom.quickSummaryModal.classList.remove('active');
+}
+
+function renderQuickSummary() {
+  if (!dom.quickSummaryTableBody) return;
+  dom.quickSummaryTableBody.innerHTML = '';
+  
+  let list = PRESETS.map(p => {
+    const calc = calculateForPreset(p);
+    return {
+      preset: p,
+      ...calc
+    };
+  });
+  
+  // Filter by brand pill
+  if (quickState.brandFilter !== 'all') {
+    list = list.filter(item => item.preset.brand === quickState.brandFilter);
+  }
+  
+  // Filter by search query
+  const query = quickState.searchQuery.toLowerCase().trim();
+  if (query) {
+    list = list.filter(item => {
+      const name = item.preset.name.toLowerCase();
+      const brand = item.preset.brand.toLowerCase();
+      const brandKr = (item.preset.brandKr || '').toLowerCase();
+      return name.includes(query) || brand.includes(query) || brandKr.includes(query);
+    });
+  }
+  
+  // Sort
+  if (quickState.sortBy === 'diffDesc') {
+    list.sort((a, b) => b.diffKRW - a.diffKRW);
+  } else if (quickState.sortBy === 'diffAsc') {
+    list.sort((a, b) => a.diffKRW - b.diffKRW);
+  } else if (quickState.sortBy === 'jpPriceAsc') {
+    list.sort((a, b) => a.preset.jpPrice - b.preset.jpPrice);
+  } else if (quickState.sortBy === 'krPriceAsc') {
+    list.sort((a, b) => a.preset.krPrice - b.preset.krPrice);
+  } else if (quickState.sortBy === 'brand') {
+    list.sort((a, b) => (a.preset.brandKr || a.preset.brand).localeCompare(b.preset.brandKr || b.preset.brand));
+  }
+  
+  if (list.length === 0) {
+    dom.quickSummaryTableBody.innerHTML = `
+      <tr>
+        <td colspan="5" style="text-align: center; padding: 40px; color: var(--text-muted);">
+          🔍 일치하는 웨딩밴드가 없습니다. 검색어를 변경해 보세요.
+        </td>
+      </tr>
+    `;
+    return;
+  }
+  
+  list.forEach(item => {
+    const p = item.preset;
+    const tr = document.createElement('tr');
+    tr.className = `quick-row ${state.activePresetId === p.id ? 'active-row' : ''}`;
+    
+    const tagClass = p.guestCardAllowed ? 'guest-ok' : 'no-guest';
+    const tagTxt = p.guestCardAllowed ? '게스트카드 5% 가능' : '게스트카드 제외';
+    const thumbHtml = p.imageUrl
+      ? `<div class="quick-thumb"><img src="${p.imageUrl}" alt="${p.name}" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.style.display='none'" /></div>`
+      : '';
+      
+    let diffBadgeHtml = '';
+    if (item.diffKRW > 0) {
+      diffBadgeHtml = `
+        <div class="diff-badge-jp-win">
+          <span class="save-amount">🇯🇵 +${formatKRW(item.diffKRW)} 절약</span>
+          <span class="save-rate">일본이 ${item.savePercent.toFixed(1)}% 저렴</span>
+        </div>
+      `;
+    } else if (item.diffKRW < 0) {
+      diffBadgeHtml = `
+        <div class="diff-badge-kr-win">
+          <span class="save-amount">🇰🇷 +${formatKRW(Math.abs(item.diffKRW))} 절약</span>
+          <span class="save-rate">한국이 ${item.savePercent.toFixed(1)}% 저렴</span>
+        </div>
+      `;
+    } else {
+      diffBadgeHtml = `<span class="diff-badge-same">가격 동일</span>`;
+    }
+    
+    tr.innerHTML = `
+      <td>
+        <div class="quick-model-cell">
+          ${thumbHtml}
+          <div class="quick-model-text">
+            <span class="quick-brand-label">${p.brandKr || p.brand}</span>
+            <span class="quick-ring-name">${p.name}</span>
+            <span class="quick-guest-tag ${tagClass}">${tagTxt}</span>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="quick-price-col">
+          <span class="quick-net-val">${formatKRW(item.totalKoreaKRW)}</span>
+          <span class="quick-raw-val">정가 ₩${p.krPrice.toLocaleString()}</span>
+        </div>
+      </td>
+      <td>
+        <div class="quick-price-col">
+          <span class="quick-net-val">${formatKRW(item.totalJapanKRW)}</span>
+          <span class="quick-raw-val">정가 ¥${p.jpPrice.toLocaleString()}</span>
+        </div>
+      </td>
+      <td>
+        ${diffBadgeHtml}
+      </td>
+      <td>
+        <button type="button" class="quick-select-btn">선택 ↗</button>
+      </td>
+    `;
+    
+    tr.addEventListener('click', () => {
+      applyPreset(p);
+      closeQuickSummaryModal();
+    });
+    
+    dom.quickSummaryTableBody.appendChild(tr);
+  });
+}
+
 // --- Live Currency Fetcher ---
 async function fetchLiveExchangeRates() {
   dom.rateTimestamp.textContent = '최신 환율 조회 중...';
@@ -526,13 +1219,13 @@ function applyPreset(preset) {
   dom.jpGuestCard.checked = preset.guestCardAllowed;
   
   if (preset.brand === 'Cartier' || preset.brand === 'Chanel') {
-    dom.guestCardNote.textContent = `${preset.brand}는 대부분 백화점 5% 게스트카드 제외 매장입니다.`;
+    dom.guestCardNote.textContent = `${preset.brandKr || preset.brand}는 대부분 백화점 5% 게스트카드 제외 매장입니다.`;
     dom.guestCardNote.style.color = '#F87171';
-  } else if (preset.brand === 'Chaumet') {
-    dom.guestCardNote.textContent = '쇼메는 대부분 백화점에서 5% 게스트카드 할인이 적용됩니다.';
+  } else if (preset.brand === 'Chaumet' || preset.brand === 'Tasaki') {
+    dom.guestCardNote.textContent = `${preset.brandKr || preset.brand}는 대부분 일본 백화점에서 5% 게스트카드 할인이 적용됩니다.`;
     dom.guestCardNote.style.color = '#34D399';
   } else {
-    dom.guestCardNote.textContent = `${preset.brand}는 한큐, 이세탄, 다카시마야 등 지점별로 5% 적용 가능`;
+    dom.guestCardNote.textContent = `${preset.brandKr || preset.brand}는 한큐, 이세탄, 다카시마야 등 지점별로 5% 적용 가능`;
     dom.guestCardNote.style.color = '#38BDF8';
   }
   
@@ -906,6 +1599,95 @@ function setupEventListeners() {
     const isLight = document.body.classList.contains('light-theme');
     dom.themeToggleBtn.querySelector('.theme-icon').textContent = isLight ? '☀️' : '🌙';
   });
+
+  // Quick Summary Modal (Ctrl + S) Events
+  if (dom.openQuickSummaryBtn) {
+    dom.openQuickSummaryBtn.addEventListener('click', () => {
+      openQuickSummaryModal();
+    });
+  }
+
+  if (dom.closeQuickSummaryBtn) {
+    dom.closeQuickSummaryBtn.addEventListener('click', () => {
+      closeQuickSummaryModal();
+    });
+  }
+
+  if (dom.footerCloseQuickSummaryBtn) {
+    dom.footerCloseQuickSummaryBtn.addEventListener('click', () => {
+      closeQuickSummaryModal();
+    });
+  }
+
+  if (dom.quickSummaryModal) {
+    dom.quickSummaryModal.addEventListener('click', (e) => {
+      if (e.target === dom.quickSummaryModal) {
+        closeQuickSummaryModal();
+      }
+    });
+  }
+
+  if (dom.quickSearchInput) {
+    dom.quickSearchInput.addEventListener('input', (e) => {
+      quickState.searchQuery = e.target.value;
+      if (dom.clearQuickSearchBtn) {
+        dom.clearQuickSearchBtn.style.display = e.target.value ? 'block' : 'none';
+      }
+      renderQuickSummary();
+    });
+  }
+
+  if (dom.clearQuickSearchBtn) {
+    dom.clearQuickSearchBtn.addEventListener('click', () => {
+      if (dom.quickSearchInput) {
+        dom.quickSearchInput.value = '';
+        quickState.searchQuery = '';
+        dom.clearQuickSearchBtn.style.display = 'none';
+        dom.quickSearchInput.focus();
+        renderQuickSummary();
+      }
+    });
+  }
+
+  if (dom.quickSortSelect) {
+    dom.quickSortSelect.addEventListener('change', (e) => {
+      quickState.sortBy = e.target.value;
+      renderQuickSummary();
+    });
+  }
+
+  if (dom.quickBrandPills) {
+    dom.quickBrandPills.querySelectorAll('.quick-pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+        dom.quickBrandPills.querySelectorAll('.quick-pill').forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        quickState.brandFilter = pill.dataset.brand;
+        renderQuickSummary();
+      });
+    });
+  }
+
+  // Global Keyboard Shortcuts (Ctrl+S / Cmd+S, Escape)
+  document.addEventListener('keydown', (e) => {
+    // Ctrl+S or Cmd+S
+    if ((e.ctrlKey || e.metaKey) && (e.key === 's' || e.key === 'S')) {
+      e.preventDefault();
+      if (dom.quickSummaryModal && dom.quickSummaryModal.classList.contains('active')) {
+        closeQuickSummaryModal();
+      } else {
+        openQuickSummaryModal();
+      }
+    }
+    // Escape key
+    if (e.key === 'Escape') {
+      if (dom.quickSummaryModal && dom.quickSummaryModal.classList.contains('active')) {
+        closeQuickSummaryModal();
+      }
+      if (dom.crawlLogModal && dom.crawlLogModal.classList.contains('active')) {
+        dom.crawlLogModal.classList.remove('active');
+      }
+    }
+  });
   
   // Crawl Log Modal Events
   if (dom.openCrawlLogBtn && dom.crawlLogModal) {
@@ -932,12 +1714,6 @@ function setupEventListeners() {
       }
     });
   }
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && dom.crawlLogModal && dom.crawlLogModal.classList.contains('active')) {
-      dom.crawlLogModal.classList.remove('active');
-    }
-  });
 
   if (dom.logSearchInput) {
     dom.logSearchInput.addEventListener('input', (e) => {
