@@ -1,9 +1,10 @@
 {
-  "timestamp": "2026-09-06 02:34:04 KST",
+  "timestamp": "2026-09-06 12:17:56 KST",
   "date": "2026-09-06",
   "status": "COMPLETED",
   "totalRings": 50,
   "updatedCount": 0,
+  "soft404Count": 0,
   "verifiedCount": 50,
   "logs": [
     {
@@ -13,13 +14,14 @@
       "name": "러브 웨딩 밴드 (SM 3.6mm)",
       "krPrice": 2050000,
       "jpPrice": 193600,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwc27b40c7/images/large/5c4da398fe195e5fa36ea2b5d4ce0071.png",
       "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/love/love-wedding-band-small-model-CRB4085000.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/love/love-wedding-band-small-model-CRB4085000.html"
+      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/love/love-wedding-band-small-model-CRB4085000.html",
+      "isSoft404": false
     },
     {
       "id": "cartier-love-cl",
@@ -28,13 +30,14 @@
       "name": "러브 링 (클래식 5.5mm 노다이아)",
       "krPrice": 2980000,
       "jpPrice": 284900,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw47516a74/images/large/509efad81d12569981abebf66c433720.png",
       "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/love/love-ring-classic-model-CRB4084600.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/love/love-ring-classic-model-CRB4084600.html"
+      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/love/love-ring-classic-model-CRB4084600.html",
+      "isSoft404": false
     },
     {
       "id": "cartier-love-1d",
@@ -43,13 +46,14 @@
       "name": "러브 링 (클래식 1다이아 0.02ct)",
       "krPrice": 3740000,
       "jpPrice": 357500,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1b4e2373/images/large/262529949d2c554b9f36f6426462feef.png",
       "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/love/love-ring-1-diamond-CRB4032400.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/love/love-ring-1-diamond-CRB4032400.html"
+      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/love/love-ring-1-diamond-CRB4032400.html",
+      "isSoft404": false
     },
     {
       "id": "cartier-trinity-cl",
@@ -58,13 +62,14 @@
       "name": "트리니티 링 (클래식 3.53mm)",
       "krPrice": 2620000,
       "jpPrice": 249700,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dwae3ae765/images/large/bdddbc7c263e54ea9f1f71501fb9eede.png",
       "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/trinity/trinity-ring-classic-model-CRB4234200.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/trinity/trinity-ring-classic-model-CRB4234200.html"
+      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/trinity/trinity-ring-classic-model-CRB4234200.html",
+      "isSoft404": false
     },
     {
       "id": "cartier-vendome-35",
@@ -73,13 +78,14 @@
       "name": "방돔 루이 까르띠에 링 (3.5mm)",
       "krPrice": 2360000,
       "jpPrice": 224400,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw1bc21509/images/large/13c8ff759ea45a0592ca07bfa7c5d0eb.png",
       "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/vendome-louis-cartier-wedding-band-3-5mm-CRB4052200.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/vendome-louis-cartier-wedding-band-3-5mm-CRB4052200.html"
+      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/vendome-louis-cartier-wedding-band-3-5mm-CRB4052200.html",
+      "isSoft404": false
     },
     {
       "id": "cartier-vendome-pave",
@@ -88,13 +94,14 @@
       "name": "방돔 루이 까르띠에 링 (3.5mm 파베 세팅)",
       "krPrice": 7750000,
       "jpPrice": 748000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.cartier.com/dw/image/v2/BGTJ_PRD/on/demandware.static/-/Sites-cartier-master/default/dw953ebfd8/images/large/92ea012019465b75a1d7f1d43a1a5ca6.png",
       "krUrl": "https://www.cartier.com/ko-kr/jewelry/rings/vendome-louis-cartier-wedding-band-pave-CRB4052900.html",
-      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/vendome-louis-cartier-wedding-band-pave-CRB4052900.html"
+      "jpUrl": "https://www.cartier.com/ja-jp/jewelry/rings/vendome-louis-cartier-wedding-band-pave-CRB4052900.html",
+      "isSoft404": false
     },
     {
       "id": "tiffany-milgrain-4mm",
@@ -103,13 +110,14 @@
       "name": "티파니 클래식 밀그레인 링 (4mm)",
       "krPrice": 2980000,
       "jpPrice": 280500,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-classic-milgrain-wedding-band-ring-12002161_989758_ED_M.jpg",
       "krUrl": "https://www.tiffany.kr/engagement/mens-wedding-bands/tiffany-classic-milgrain-wedding-band-ring-GRP00096/",
-      "jpUrl": "https://www.tiffany.co.jp/engagement/mens-wedding-bands/tiffany-classic-milgrain-wedding-band-ring-GRP00096/"
+      "jpUrl": "https://www.tiffany.co.jp/engagement/mens-wedding-bands/tiffany-classic-milgrain-wedding-band-ring-GRP00096/",
+      "isSoft404": false
     },
     {
       "id": "tiffany-together-1d-4mm",
@@ -118,13 +126,14 @@
       "name": "티파니 투게더 밴드 링 (4mm 1다이아)",
       "krPrice": 4030000,
       "jpPrice": 385000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-together-milgrain-band-ring-69683935_1033282_ED.jpg",
       "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-together-milgrain-band-ring-69683935/",
-      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-together-milgrain-band-ring-69683935/"
+      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-together-milgrain-band-ring-69683935/",
+      "isSoft404": false
     },
     {
       "id": "tiffany-harmony-pt-3mm",
@@ -133,13 +142,14 @@
       "name": "티파니 하모니 웨딩 밴드 (플래티늄 3mm)",
       "krPrice": 1850000,
       "jpPrice": 176000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-harmony-wedding-band-ring-31298418_989758_ED_M.jpg",
       "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/",
-      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/"
+      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/",
+      "isSoft404": false
     },
     {
       "id": "tiffany-harmony-rg-3mm",
@@ -148,13 +158,14 @@
       "name": "티파니 하모니 웨딩 밴드 (로즈골드 3mm)",
       "krPrice": 1590000,
       "jpPrice": 151800,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-harmony-wedding-band-ring-31298418_989758_ED_M.jpg",
       "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/",
-      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/"
+      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-wedding-band-ring-GRP06830/",
+      "isSoft404": false
     },
     {
       "id": "tiffany-harmony-dia",
@@ -163,13 +174,14 @@
       "name": "티파니 하모니 밴드 링 (다이아몬드 세팅)",
       "krPrice": 3980000,
       "jpPrice": 385000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-harmony-band-ring-31298450_989758_ED_M.jpg",
       "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-harmony-band-ring-GRP06832/",
-      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-band-ring-GRP06832/"
+      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-harmony-band-ring-GRP06832/",
+      "isSoft404": false
     },
     {
       "id": "tiffany-t-narrow-rg",
@@ -178,13 +190,14 @@
       "name": "티파니 T 내로우 링 (18K 로즈골드)",
       "krPrice": 2270000,
       "jpPrice": 214500,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-t-narrow-ring-33823304_996162_ED.jpg",
       "krUrl": "https://www.tiffany.kr/jewelry/rings/tiffany-t-narrow-ring-GRP07832/",
-      "jpUrl": "https://www.tiffany.co.jp/jewelry/rings/tiffany-t-narrow-ring-GRP07832/"
+      "jpUrl": "https://www.tiffany.co.jp/jewelry/rings/tiffany-t-narrow-ring-GRP07832/",
+      "isSoft404": false
     },
     {
       "id": "tiffany-band-3dia",
@@ -193,13 +206,14 @@
       "name": "티파니 T&CO 밴드 링 (3P 다이아몬드)",
       "krPrice": 2850000,
       "jpPrice": 269500,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media.tiffany.com/is/image/Tiffany/EcomItemL2/tiffany-classic-wedding-band-ring-63064947_989758_ED_M.jpg",
       "krUrl": "https://www.tiffany.kr/engagement/womens-wedding-bands/tiffany-band-ring-with-diamonds-GRP00095/",
-      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-band-ring-with-diamonds-GRP00095/"
+      "jpUrl": "https://www.tiffany.co.jp/engagement/womens-wedding-bands/tiffany-band-ring-with-diamonds-GRP00095/",
+      "isSoft404": false
     },
     {
       "id": "chaumet-torsade-pg",
@@ -208,13 +222,14 @@
       "name": "토르사드 드 쇼메 (핑크골드 3.5mm)",
       "krPrice": 2650000,
       "jpPrice": 251900,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082725_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082725",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082725"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082725",
+      "isSoft404": false
     },
     {
       "id": "chaumet-torsade-pt",
@@ -223,13 +238,14 @@
       "name": "토르사드 드 쇼메 (플래티넘 3.5mm)",
       "krPrice": 3100000,
       "jpPrice": 293700,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082723_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082723",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082723"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082723",
+      "isSoft404": false
     },
     {
       "id": "chaumet-torsade-1d",
@@ -238,13 +254,14 @@
       "name": "토르사드 드 쇼메 (플래티넘 1다이아)",
       "krPrice": 3550000,
       "jpPrice": 336600,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082724_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082724",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082724"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082724",
+      "isSoft404": false
     },
     {
       "id": "chaumet-torsade-pave",
@@ -253,13 +270,14 @@
       "name": "토르사드 드 쇼메 (플래티넘 풀 파베)",
       "krPrice": 7420000,
       "jpPrice": 704000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082727_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082727",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082727"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/torsade-de-chaumet-wedding-band-082727",
+      "isSoft404": false
     },
     {
       "id": "chaumet-liens",
@@ -268,13 +286,14 @@
       "name": "리앙 에비당스 링 (노다이아)",
       "krPrice": 2880000,
       "jpPrice": 272800,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082218_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/liens-evidence-wedding-band-082218",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/liens-evidence-wedding-band-082218"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/liens-evidence-wedding-band-082218",
+      "isSoft404": false
     },
     {
       "id": "chaumet-liens-dia",
@@ -283,13 +302,14 @@
       "name": "리앙 에비당스 링 (중간 다이아몬드)",
       "krPrice": 3740000,
       "jpPrice": 354200,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/082219_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/liens-evidence-wedding-band-082219",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/liens-evidence-wedding-band-082219"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/liens-evidence-wedding-band-082219",
+      "isSoft404": false
     },
     {
       "id": "chaumet-triomphe-sm",
@@ -298,13 +318,14 @@
       "name": "트리옹프 드 쇼메 (여성용 내로우 노다이아)",
       "krPrice": 2240000,
       "jpPrice": 212300,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/085202_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085202",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085202"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085202",
+      "isSoft404": false
     },
     {
       "id": "chaumet-triomphe-md",
@@ -313,13 +334,14 @@
       "name": "트리옹프 드 쇼메 (남성용 클래식 노다이아)",
       "krPrice": 2880000,
       "jpPrice": 272800,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/085204_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085204",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085204"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085204",
+      "isSoft404": false
     },
     {
       "id": "chaumet-triomphe-pave",
@@ -328,13 +350,14 @@
       "name": "트리옹프 드 쇼메 (풀 파베 다이아)",
       "krPrice": 5980000,
       "jpPrice": 567600,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/085203_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085203",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085203"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/triomphe-de-chaumet-wedding-band-085203",
+      "isSoft404": false
     },
     {
       "id": "chaumet-bee",
@@ -343,13 +366,14 @@
       "name": "비 마이 러브 링 (노다이아)",
       "krPrice": 1740000,
       "jpPrice": 163900,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/083434_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/bee-my-love-ring-083434",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/bee-my-love-ring-083434"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/bee-my-love-ring-083434",
+      "isSoft404": false
     },
     {
       "id": "chaumet-bee-1d",
@@ -358,13 +382,14 @@
       "name": "비 마이 러브 링 (1다이아)",
       "krPrice": 2280000,
       "jpPrice": 215600,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chaumet.com/media/catalog/product/0/8/083435_1.png",
       "krUrl": "https://www.chaumet.com/kr/bridal/wedding-bands/bee-my-love-ring-083435",
-      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/bee-my-love-ring-083435"
+      "jpUrl": "https://www.chaumet.com/jp/bridal/wedding-bands/bee-my-love-ring-083435",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-bzero1-plain",
@@ -373,13 +398,14 @@
       "name": "비제로원 1밴드 링 (노다이아)",
       "krPrice": 2810000,
       "jpPrice": 267300,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1319269.png",
       "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/b-zero1-ring-yellow-gold-335978",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/b-zero1-ring-yellow-gold-335978"
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/b-zero1-ring-yellow-gold-335978",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-bzero1-pave",
@@ -388,13 +414,14 @@
       "name": "비제로원 1밴드 링 (파베 다이아)",
       "krPrice": 7300000,
       "jpPrice": 693000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1321458.png",
       "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/b-zero1/b-zero1-ring-white-gold-329342",
-      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/b-zero1/b-zero1-ring-white-gold-329342"
+      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/b-zero1/b-zero1-ring-white-gold-329342",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-serpenti-plain",
@@ -403,13 +430,14 @@
       "name": "세르펜티 바이퍼 링 (노다이아)",
       "krPrice": 3190000,
       "jpPrice": 302500,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1337147.png",
       "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti/serpenti-viper-ring-rose-gold-354911",
-      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-rose-gold-354911"
+      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-rose-gold-354911",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-serpenti-dia",
@@ -418,13 +446,14 @@
       "name": "세르펜티 바이퍼 링 (세미파베 다이아)",
       "krPrice": 5650000,
       "jpPrice": 539000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1338520.png",
       "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/serpenti/serpenti-viper-ring-diamonds-353265",
-      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-diamonds-353265"
+      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/serpenti/serpenti-viper-ring-diamonds-353265",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-infinito-plain",
@@ -433,13 +462,14 @@
       "name": "인피니토 웨딩 밴드 (노다이아 플래티넘)",
       "krPrice": 2680000,
       "jpPrice": 254100,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1336125.png",
       "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-platinum-351978",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-platinum-351978"
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-platinum-351978",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-infinito-1d",
@@ -448,13 +478,14 @@
       "name": "인피니토 웨딩 밴드 (1다이아 플래티넘)",
       "krPrice": 3120000,
       "jpPrice": 295900,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1336128.png",
       "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-1-diamond-351980",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-1-diamond-351980"
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-1-diamond-351980",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-infinito-pave",
@@ -463,13 +494,14 @@
       "name": "인피니토 웨딩 밴드 (풀 파베 플래티넘)",
       "krPrice": 6850000,
       "jpPrice": 649000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1336131.png",
       "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/infinito-wedding-band-pave-351982",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-pave-351982"
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/infinito-wedding-band-pave-351982",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-bb-1d",
@@ -478,13 +510,14 @@
       "name": "불가리 불가리 링 (1다이아 18K 로즈골드)",
       "krPrice": 2980000,
       "jpPrice": 282700,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1325140.png",
       "krUrl": "https://www.bulgari.com/ko-kr/jewelry/by-collection/bulgari-bulgari/bulgari-bulgari-ring-rose-gold-341824",
-      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/bulgari-bulgari/bulgari-bulgari-ring-rose-gold-341824"
+      "jpUrl": "https://www.bulgari.com/ja-jp/jewelry/by-collection/bulgari-bulgari/bulgari-bulgari-ring-rose-gold-341824",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-marryme-1d",
@@ -493,13 +526,14 @@
       "name": "메리미 웨딩 밴드 (플래티넘 1다이아)",
       "krPrice": 2750000,
       "jpPrice": 260700,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1318524.png",
       "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/marryme-wedding-band-1-diamond-335759",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-1-diamond-335759"
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-1-diamond-335759",
+      "isSoft404": false
     },
     {
       "id": "bvlgari-marryme-5d",
@@ -508,13 +542,14 @@
       "name": "메리미 웨딩 밴드 (플래티넘 5다이아)",
       "krPrice": 3850000,
       "jpPrice": 365200,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://media2.bulgari.com/f_auto,q_auto/production/dw41a59c01/images/images/1318526.png",
       "krUrl": "https://www.bulgari.com/ko-kr/bridal/wedding-bands/marryme-wedding-band-5-diamonds-335758",
-      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-5-diamonds-335758"
+      "jpUrl": "https://www.bulgari.com/ja-jp/bridal/wedding-bands/marryme-wedding-band-5-diamonds-335758",
+      "isSoft404": false
     },
     {
       "id": "chanel-coco-sm",
@@ -523,13 +558,14 @@
       "name": "코코 크러쉬 링 (스몰 노다이아)",
       "krPrice": 4480000,
       "jpPrice": 424600,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-gold-18k-beige-gold-packshot-portee-1-j10817-73266669.jpg",
       "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/coco-crush-ring-j10817",
-      "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-j10817"
+      "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-j10817",
+      "isSoft404": false
     },
     {
       "id": "chanel-coco-sm-dia",
@@ -538,13 +574,14 @@
       "name": "코코 크러쉬 링 (스몰 다이아몬드)",
       "krPrice": 5650000,
       "jpPrice": 535000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-gold-18k-diamonds-packshot-portee-1-j11970-73266669.jpg",
       "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/coco-crush-ring-diamonds-j11970",
-      "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-diamonds-j11970"
+      "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-diamonds-j11970",
+      "isSoft404": false
     },
     {
       "id": "chanel-coco-mini",
@@ -553,13 +590,14 @@
       "name": "코코 크러쉬 링 (미니 노다이아)",
       "krPrice": 2590000,
       "jpPrice": 245300,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.chanel.com/images/as/t_one/q_auto:good,f_auto,fl_lossy,dpr_1.1/w_600/coco-crush-ring-beige-beige-gold-packshot-portee-1-j11785-73266669.jpg",
       "krUrl": "https://www.chanel.com/kr/fine-jewellery/coco-crush/coco-crush-ring-j11785",
-      "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-j11785"
+      "jpUrl": "https://www.chanel.com/jp/fine-jewellery/coco-crush/coco-crush-ring-j11785",
+      "isSoft404": false
     },
     {
       "id": "boucheron-quatre-jrg00290",
@@ -568,13 +606,14 @@
       "name": "콰트로 클래식 스몰 링 (JRG00290)",
       "krPrice": 7410000,
       "jpPrice": 819500,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/r/jrg00290_1.png",
       "krUrl": "https://www.boucheron.com/ko-kr/quatre-classique-small-ring-jrg00290.html",
-      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-classique-small-ring-jrg00290.html"
+      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-classique-small-ring-jrg00290.html",
+      "isSoft404": false
     },
     {
       "id": "boucheron-quatre-jal00280",
@@ -583,13 +622,14 @@
       "name": "콰트로 레디언트 에디션 웨딩밴드 (JAL00280)",
       "krPrice": 8800000,
       "jpPrice": 962500,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00280_1.png",
       "krUrl": "https://www.boucheron.com/ko-kr/quatre-radiant-edition-wedding-band-jal00280.html",
-      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-radiant-edition-wedding-band-jal00280.html"
+      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-radiant-edition-wedding-band-jal00280.html",
+      "isSoft404": false
     },
     {
       "id": "boucheron-quatre-jal00300",
@@ -598,13 +638,14 @@
       "name": "콰트로 더블 화이트 에디션 밴드 (JAL00300)",
       "krPrice": 3910000,
       "jpPrice": 407000,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00300_1.png",
       "krUrl": "https://www.boucheron.com/ko-kr/quatre-double-white-edition-wedding-band-jal00300.html",
-      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-double-white-edition-wedding-band-jal00300.html"
+      "jpUrl": "https://www.boucheron.com/ja-jp/quatre-double-white-edition-wedding-band-jal00300.html",
+      "isSoft404": false
     },
     {
       "id": "boucheron-facette",
@@ -613,13 +654,14 @@
       "name": "파셋 웨딩 밴드 (플래티넘)",
       "krPrice": 2940000,
       "jpPrice": 279400,
-      "krStatus": "HTTP 403 (정가 유지)",
-      "jpStatus": "HTTP 403 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 403)",
+      "jpStatus": "❌ 접속 오류 (HTTP 403)",
       "krCode": 403,
       "jpCode": 403,
       "imageUrl": "https://www.boucheron.com/media/catalog/product/cache/057be03577d67f5cebb6d5ff2bbdf5b3/j/a/jal00014_1.png",
       "krUrl": "https://www.boucheron.com/ko-kr/facette-wedding-band-platinum-jal00014.html",
-      "jpUrl": "https://www.boucheron.com/ja-jp/facette-wedding-band-platinum-jal00014.html"
+      "jpUrl": "https://www.boucheron.com/ja-jp/facette-wedding-band-platinum-jal00014.html",
+      "isSoft404": false
     },
     {
       "id": "tasaki-trapezio-plain",
@@ -628,13 +670,14 @@
       "name": "트라페지오 링 (노다이아)",
       "krPrice": 2150000,
       "jpPrice": 203500,
-      "krStatus": "HTTP 404 (정가 유지)",
-      "jpStatus": "HTTP 404 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 404)",
+      "jpStatus": "❌ 접속 오류 (HTTP 404)",
       "krCode": 404,
       "jpCode": 404,
       "imageUrl": "https://www.tasaki.co.jp/medias/sys_master/images/images/h67/hd7/8834789507102/RD-F2643-18KSG_01.jpg",
       "krUrl": "https://www.tasaki.co.kr/bridal/bridal_collection/trapezio/RD-F2643-18KSG/",
-      "jpUrl": "https://www.tasaki.co.jp/bridal/bridal_collection/trapezio/RD-F2643-18KSG/"
+      "jpUrl": "https://www.tasaki.co.jp/bridal/bridal_collection/trapezio/RD-F2643-18KSG/",
+      "isSoft404": false
     },
     {
       "id": "tasaki-trapezio-1d",
@@ -643,13 +686,14 @@
       "name": "트라페지오 링 (1다이아)",
       "krPrice": 2550000,
       "jpPrice": 242000,
-      "krStatus": "HTTP 404 (정가 유지)",
-      "jpStatus": "HTTP 404 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 404)",
+      "jpStatus": "❌ 접속 오류 (HTTP 404)",
       "krCode": 404,
       "jpCode": 404,
       "imageUrl": "https://www.tasaki.co.jp/medias/sys_master/images/images/h33/hba/8834789834782/RD-F2644-18KSG_01.jpg",
       "krUrl": "https://www.tasaki.co.kr/bridal/bridal_collection/trapezio/RD-F2644-18KSG/",
-      "jpUrl": "https://www.tasaki.co.jp/bridal/bridal_collection/trapezio/RD-F2644-18KSG/"
+      "jpUrl": "https://www.tasaki.co.jp/bridal/bridal_collection/trapezio/RD-F2644-18KSG/",
+      "isSoft404": false
     },
     {
       "id": "tasaki-piano-plain",
@@ -658,13 +702,14 @@
       "name": "피아노 링 20 (노다이아)",
       "krPrice": 1980000,
       "jpPrice": 187000,
-      "krStatus": "HTTP 404 (정가 유지)",
-      "jpStatus": "HTTP 404 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 404)",
+      "jpStatus": "❌ 접속 오류 (HTTP 404)",
       "krCode": 404,
       "jpCode": 404,
       "imageUrl": "https://www.tasaki.co.jp/medias/sys_master/images/images/h90/he9/8834788524062/RD-F2284-18KSG_01.jpg",
       "krUrl": "https://www.tasaki.co.kr/bridal/bridal_collection/piano/RD-F2284-18KSG/",
-      "jpUrl": "https://www.tasaki.co.jp/bridal/bridal_collection/piano/RD-F2284-18KSG/"
+      "jpUrl": "https://www.tasaki.co.jp/bridal/bridal_collection/piano/RD-F2284-18KSG/",
+      "isSoft404": false
     },
     {
       "id": "tasaki-piano-dia",
@@ -673,13 +718,14 @@
       "name": "피아노 링 (3다이아 세팅)",
       "krPrice": 2680000,
       "jpPrice": 253000,
-      "krStatus": "HTTP 404 (정가 유지)",
-      "jpStatus": "HTTP 404 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 404)",
+      "jpStatus": "❌ 접속 오류 (HTTP 404)",
       "krCode": 404,
       "jpCode": 404,
       "imageUrl": "https://www.tasaki.co.jp/medias/sys_master/images/images/h29/h1d/8834788851742/RD-F2285-18KSG_01.jpg",
       "krUrl": "https://www.tasaki.co.kr/bridal/bridal_collection/piano/RD-F2285-18KSG/",
-      "jpUrl": "https://www.tasaki.co.jp/bridal/bridal_collection/piano/RD-F2285-18KSG/"
+      "jpUrl": "https://www.tasaki.co.jp/bridal/bridal_collection/piano/RD-F2285-18KSG/",
+      "isSoft404": false
     },
     {
       "id": "graff-laurence-plain",
@@ -688,13 +734,14 @@
       "name": "로렌스 그라프 시그니처 밴드 (노다이아)",
       "krPrice": 3650000,
       "jpPrice": 345000,
-      "krStatus": "HTTP 302 (정가 유지)",
-      "jpStatus": "HTTP 302 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 302)",
+      "jpStatus": "❌ 접속 오류 (HTTP 302)",
       "krCode": 302,
       "jpCode": 302,
       "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg",
       "krUrl": "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/laurence-graff-signature-band-RGR778/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/laurence-graff-signature-band-RGR778/"
+      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/laurence-graff-signature-band-RGR778/",
+      "isSoft404": false
     },
     {
       "id": "graff-laurence-semi",
@@ -703,13 +750,14 @@
       "name": "로렌스 그라프 시그니처 밴드 (일부 다이아)",
       "krPrice": 4340000,
       "jpPrice": 455000,
-      "krStatus": "HTTP 302 (정가 유지)",
-      "jpStatus": "HTTP 302 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 302)",
+      "jpStatus": "❌ 접속 오류 (HTTP 302)",
       "krCode": 302,
       "jpCode": 302,
       "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dw83a218f4/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR780_GR83383_Hero_1.jpg",
       "krUrl": "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/laurence-graff-signature-diamond-band-RGR780/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/laurence-graff-signature-diamond-band-RGR780/"
+      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/laurence-graff-signature-diamond-band-RGR780/",
+      "isSoft404": false
     },
     {
       "id": "graff-laurence-pave",
@@ -718,13 +766,14 @@
       "name": "로렌스 그라프 시그니처 밴드 (풀 파베 다이아)",
       "krPrice": 6300000,
       "jpPrice": 645000,
-      "krStatus": "HTTP 302 (정가 유지)",
-      "jpStatus": "HTTP 302 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 302)",
+      "jpStatus": "❌ 접속 오류 (HTTP 302)",
       "krCode": 302,
       "jpCode": 302,
       "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dw10d297a7/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR779_GR83382_Hero_1.jpg",
       "krUrl": "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/laurence-graff-signature-pave-diamond-band-RGR779/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/laurence-graff-signature-pave-diamond-band-RGR779/"
+      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/laurence-graff-signature-pave-diamond-band-RGR779/",
+      "isSoft404": false
     },
     {
       "id": "graff-spiral-plain",
@@ -733,13 +782,14 @@
       "name": "스파이럴 밴드 링 (노다이아)",
       "krPrice": 3300000,
       "jpPrice": 315000,
-      "krStatus": "HTTP 302 (정가 유지)",
-      "jpStatus": "HTTP 302 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 302)",
+      "jpStatus": "❌ 접속 오류 (HTTP 302)",
       "krCode": 302,
       "jpCode": 302,
       "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwd3307b39/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR778_GR83381_Hero_1.jpg",
       "krUrl": "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/spiral-band-RGR481/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/spiral-band-RGR481/"
+      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/spiral-band-RGR481/",
+      "isSoft404": false
     },
     {
       "id": "graff-spiral-pave",
@@ -748,13 +798,14 @@
       "name": "스파이럴 밴드 링 (파베 다이아)",
       "krPrice": 10210000,
       "jpPrice": 1050000,
-      "krStatus": "HTTP 302 (정가 유지)",
-      "jpStatus": "HTTP 302 (정가 유지)",
+      "krStatus": "❌ 접속 오류 (HTTP 302)",
+      "jpStatus": "❌ 접속 오류 (HTTP 302)",
       "krCode": 302,
       "jpCode": 302,
       "imageUrl": "https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dw10d297a7/sfcc-graff-staging/i/m/a/g/e/images_hi_res_RGR779_GR83382_Hero_1.jpg",
       "krUrl": "https://www.graff.com/kr-ko/jewellery/rings/wedding-bands/spiral-pave-diamond-band-RGR482/",
-      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/spiral-pave-diamond-band-RGR482/"
+      "jpUrl": "https://www.graff.com/jp-ja/jewellery/rings/wedding-bands/spiral-pave-diamond-band-RGR482/",
+      "isSoft404": false
     }
   ]
 }

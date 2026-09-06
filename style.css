@@ -1555,6 +1555,18 @@ body.light-theme .log-thumb-box {
   color: #93C5FD;
 }
 
+.log-status-pill.warn {
+  background: rgba(245, 158, 11, 0.15);
+  color: #FBBF24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.log-status-pill.updated {
+  background: rgba(168, 85, 247, 0.15);
+  color: #C084FC;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
 .log-store-link {
   font-size: 0.72rem;
   color: var(--text-muted);

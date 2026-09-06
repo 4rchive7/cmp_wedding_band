@@ -867,12 +867,20 @@ function renderCrawlLogModal(logData, filterQuery = '') {
     return;
   }
 
+  const getStatusClass = (statusStr, code) => {
+    if (!statusStr) return 'ok';
+    if (statusStr.includes('소프트') || statusStr.includes('⚠️')) return 'warn';
+    if (statusStr.includes('오류') || statusStr.includes('❌') || code >= 400) return 'notice';
+    if (statusStr.includes('신규') || statusStr.includes('✨') || statusStr.includes('🔄')) return 'updated';
+    return 'ok';
+  };
+
   items.forEach(item => {
     const card = document.createElement('div');
     card.className = 'log-row-card';
 
-    const krStatusClass = item.krCode === 200 ? 'ok' : 'notice';
-    const jpStatusClass = item.jpCode === 200 ? 'ok' : 'notice';
+    const krStatusClass = getStatusClass(item.krStatus, item.krCode);
+    const jpStatusClass = getStatusClass(item.jpStatus, item.jpCode);
     const thumbHtml = item.imageUrl
       ? `<div class="log-thumb-box"><img src="${item.imageUrl}" alt="${item.name}" class="log-thumb-img" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.style.display='none'" /></div>`
       : '';
