@@ -1666,6 +1666,57 @@ body.light-theme .kbd-badge {
   font-weight: 700;
 }
 
+/* Modal Tabs Switcher */
+.quick-modal-tabs {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.quick-view-tab-btn {
+  background: var(--bg-input);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all var(--transition-fast);
+}
+
+.quick-view-tab-btn:hover {
+  background: var(--bg-input-hover);
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.quick-view-tab-btn.active {
+  background: rgba(212, 163, 89, 0.15);
+  color: var(--gold-light);
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 12px var(--gold-glow);
+}
+
+body.light-theme .quick-view-tab-btn.active {
+  background: rgba(180, 130, 60, 0.15);
+  color: var(--gold-dark);
+  border-color: var(--gold-dark);
+}
+
+.quick-modal-view-panel {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
 /* Controls Bar */
 .quick-controls-bar {
   display: flex;

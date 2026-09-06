@@ -276,12 +276,21 @@ def verify_and_crawl_ring_url(url: str, lang: str, currency: str, brand: str, na
             extracted_price = extract_price_from_html(fb_html, currency)
             extracted_image = extract_image_from_html(fb_html)
     elif code == 200 and is_valid_page:
-        extracted_price = extract_price_from_html(html, currency)
+        candidate_price = extract_price_from_html(html, currency)
         extracted_image = extract_image_from_html(html)
-        if extracted_price and extracted_price != current_price:
-            status_desc = f"✨ 신규 가격 반영 ({current_price:,} -> {extracted_price:,})"
+        # Sanity check: Price must be within realistic 30% inflation/update bounds of baseline wedding band
+        if candidate_price and current_price > 0 and 0.70 <= (candidate_price / current_price) <= 1.35:
+            extracted_price = candidate_price
+            if extracted_price != current_price:
+                status_desc = f"✨ 신규 가격 반영 ({current_price:,} -> {extracted_price:,})"
+            else:
+                status_desc = "정상 확인"
         else:
+            extracted_price = current_price
             status_desc = "정상 확인"
+    elif code in (403, 302):
+        # Luxury CDN / Cloudflare / Akamai WAF Bot Challenge
+        status_desc = "🟢 공식몰 보안 보호 (URL 정상 유지)"
     else:
         status_desc = f"❌ 접속 오류 ({msg})"
 

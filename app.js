@@ -738,22 +738,17 @@ const dom = {
   shareUrlBtn: document.getElementById('shareUrlBtn'),
   toast: document.getElementById('toast'),
 
-  // Crawl Log Modal
-  openCrawlLogBtn: document.getElementById('openCrawlLogBtn'),
-  closeCrawlLogBtn: document.getElementById('closeCrawlLogBtn'),
-  crawlLogModal: document.getElementById('crawlLogModal'),
-  logTimestamp: document.getElementById('logTimestamp'),
-  logTotalCount: document.getElementById('logTotalCount'),
-  logStatusBadge: document.getElementById('logStatusBadge'),
-  logUpdatedCount: document.getElementById('logUpdatedCount'),
-  logSearchInput: document.getElementById('logSearchInput'),
-  logItemsContainer: document.getElementById('logItemsContainer'),
-
-  // Quick Summary Modal (Ctrl + S)
+  // Quick Summary & Crawler Log Modal (Ctrl + S)
   openQuickSummaryBtn: document.getElementById('openQuickSummaryBtn'),
   closeQuickSummaryBtn: document.getElementById('closeQuickSummaryBtn'),
   footerCloseQuickSummaryBtn: document.getElementById('footerCloseQuickSummaryBtn'),
   quickSummaryModal: document.getElementById('quickSummaryModal'),
+  quickModalMainTitle: document.getElementById('quickModalMainTitle'),
+  quickModalSubTitle: document.getElementById('quickModalSubTitle'),
+  tabDirectoryBtn: document.getElementById('tabDirectoryBtn'),
+  tabCrawlerLogBtn: document.getElementById('tabCrawlerLogBtn'),
+  quickDirectoryPanel: document.getElementById('quickDirectoryPanel'),
+  quickCrawlerLogPanel: document.getElementById('quickCrawlerLogPanel'),
   quickSearchInput: document.getElementById('quickSearchInput'),
   clearQuickSearchBtn: document.getElementById('clearQuickSearchBtn'),
   quickBrandPills: document.getElementById('quickBrandPills'),
@@ -926,6 +921,7 @@ let quickState = {
 function openQuickSummaryModal() {
   if (!dom.quickSummaryModal) return;
   dom.quickSummaryModal.classList.add('active');
+  if (dom.tabDirectoryBtn) dom.tabDirectoryBtn.click();
   renderQuickSummary();
   if (dom.quickSearchInput) {
     dom.quickSearchInput.focus();
@@ -1545,6 +1541,32 @@ function setupEventListeners() {
     });
   }
 
+  // Quick Modal Tabs Switcher (Directory vs Crawler Log)
+  if (dom.tabDirectoryBtn && dom.tabCrawlerLogBtn) {
+    dom.tabDirectoryBtn.addEventListener('click', () => {
+      dom.tabDirectoryBtn.classList.add('active');
+      dom.tabCrawlerLogBtn.classList.remove('active');
+      if (dom.quickDirectoryPanel) dom.quickDirectoryPanel.style.display = 'flex';
+      if (dom.quickCrawlerLogPanel) dom.quickCrawlerLogPanel.style.display = 'none';
+      if (dom.quickModalMainTitle) dom.quickModalMainTitle.textContent = '📋 8대 럭셔리 웨딩밴드 모델 & 공식몰 URL';
+      if (dom.quickModalSubTitle) dom.quickModalSubTitle.textContent = '각 브랜드별 모델명과 한·일 공식 홈페이지 링크를 빠르게 확인할 수 있습니다.';
+    });
+
+    dom.tabCrawlerLogBtn.addEventListener('click', () => {
+      dom.tabCrawlerLogBtn.classList.add('active');
+      dom.tabDirectoryBtn.classList.remove('active');
+      if (dom.quickCrawlerLogPanel) dom.quickCrawlerLogPanel.style.display = 'flex';
+      if (dom.quickDirectoryPanel) dom.quickDirectoryPanel.style.display = 'none';
+      if (dom.quickModalMainTitle) dom.quickModalMainTitle.textContent = '📡 공식몰 크롤링 & 데이터 검증 로그';
+      if (dom.quickModalSubTitle) dom.quickModalSubTitle.textContent = '8대 브랜드 공식몰 실시간 상태 및 소프트 404 감지 검증 내역입니다.';
+      if (crawlLogData) {
+        renderCrawlLogModal(crawlLogData, dom.logSearchInput ? dom.logSearchInput.value : '');
+      } else {
+        loadCrawlLog();
+      }
+    });
+  }
+
   // Global Keyboard Shortcuts (Ctrl+S / Cmd+S, Escape)
   document.addEventListener('keydown', (e) => {
     // Ctrl+S or Cmd+S
@@ -1561,37 +1583,8 @@ function setupEventListeners() {
       if (dom.quickSummaryModal && dom.quickSummaryModal.classList.contains('active')) {
         closeQuickSummaryModal();
       }
-      if (dom.crawlLogModal && dom.crawlLogModal.classList.contains('active')) {
-        dom.crawlLogModal.classList.remove('active');
-      }
     }
   });
-  
-  // Crawl Log Modal Events
-  if (dom.openCrawlLogBtn && dom.crawlLogModal) {
-    dom.openCrawlLogBtn.addEventListener('click', () => {
-      dom.crawlLogModal.classList.add('active');
-      if (crawlLogData) {
-        renderCrawlLogModal(crawlLogData, dom.logSearchInput ? dom.logSearchInput.value : '');
-      } else {
-        loadCrawlLog();
-      }
-    });
-  }
-
-  if (dom.closeCrawlLogBtn && dom.crawlLogModal) {
-    dom.closeCrawlLogBtn.addEventListener('click', () => {
-      dom.crawlLogModal.classList.remove('active');
-    });
-  }
-
-  if (dom.crawlLogModal) {
-    dom.crawlLogModal.addEventListener('click', (e) => {
-      if (e.target === dom.crawlLogModal) {
-        dom.crawlLogModal.classList.remove('active');
-      }
-    });
-  }
 
   if (dom.logSearchInput) {
     dom.logSearchInput.addEventListener('input', (e) => {
