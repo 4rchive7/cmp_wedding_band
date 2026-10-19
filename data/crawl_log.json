@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-12 12:37:18 KST",
+  "timestamp": "2026-10-19 11:40:46 KST",
   "status": "COMPLETED",
   "totalRings": 50,
   "updatedCount": 0,
@@ -159,7 +159,7 @@
       "krStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "jpStatus": "🟢 공식몰 정규 URL (검증 완료)",
       "krCode": 404,
-      "jpCode": 404,
+      "jpCode": 400,
       "krUrl": "https://www.tiffany.kr/wedding/wedding-rings/",
       "jpUrl": "https://www.tiffany.co.jp/wedding/wedding-rings/",
       "isSoft404": false
